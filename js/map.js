@@ -1,7 +1,7 @@
 jQuery(function($){
 
-	var longitude = 45.124099;
-	var latitude = -123.113634;
+	var longitude = 9.937931;
+	var latitude = -84.075448; 
 	var canvas = "map";
 
 	
@@ -42,7 +42,7 @@ jQuery(function($){
 			  }
 			];	
 			var infowindow = new google.maps.InfoWindow({
-				content:"<div class='map_adresse'><div class='map_address'><span class='address'>Address : </span>1401 South Grand Avenue Los Angeles, CA 90015</div> <div class='map_tel'><span class='tel'>Phone : </span>(213) 748-2411</div></div>"
+				content:"<div class='map_adresse'><div class='map_address'><span class='address'>Address : </span> Tecnológico de Costa Rica, Calles 5 y 7, Avenida 9, San José, Costa Rica </div></div>"
 			});	
 			
 			map.setOptions({styles: styles});
