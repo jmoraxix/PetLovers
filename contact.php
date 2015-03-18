@@ -16,17 +16,17 @@
 
 	<header>
 		<div class="logo">
-			<a href="index.html"><img src="img/logo.png" title="PetLovers" alt="PetLovers"/></a>
+			<a href="index.php"><img src="img/logo.png" title="PetLovers" alt="PetLovers"/></a>
 		</div><!-- end logo -->
 
 		<div id="menu_icon"></div>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">The Team</a></li>
 				<li><a href="#">Journal</a></li>
-				<li><a href="contact.html" class="selected">Contact Us</a></li>
+				<li><a href="contact.php" class="selected">Contact Us</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
 

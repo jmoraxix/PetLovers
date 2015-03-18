@@ -13,17 +13,17 @@
 
 	<header>
 		<div class="logo">
-			<a href="index.html"><img src="img/logo.png" title="Magnetic" alt="Magnetic"/></a>
+			<a href="index.php"><img src="img/logo.png" title="Magnetic" alt="Magnetic"/></a>
 		</div><!-- end logo -->
 
 		<div id="menu_icon"></div>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">The Team</a></li>
 				<li><a href="#">Journal</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="contact.php">Contact Us</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
 
@@ -52,7 +52,7 @@
 							
 					<ul class="btn clearfix">
 						<li><a href="#" class="previous" data-title="Previous"></a></li>
-						<li><a href="index.html" class="grid" data-title="Portfolio"></a></li>
+						<li><a href="index.php" class="grid" data-title="Portfolio"></a></li>
 						<li><a href="#" class="next" data-title="Next"></a></li>
 					</ul>							
 					
