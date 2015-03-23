@@ -29,6 +29,14 @@
 				<li><a href="contact.php" class="selected">Contact Us</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
+		
+		<form>
+			<input type="text" name="correo electronico" title="Correo Electronico" value="Correo Electronico"/>
+			<input type="text" name="contraseña" title="Contraseña" value="Contraseña"/>
+			<input type="submit"  name="iniciar sesión" value="Iniciar Sesión"/>
+			<input type="submit"  name="crear cuenta" value="Crear Cuenta" align="right"/>
+		</form>
+		<!-- (botones y textboxes) Hecho por Ernesto Lang 3/22/15-->
 
 		<div class="footer clearfix">
 			<ul class="social clearfix">
