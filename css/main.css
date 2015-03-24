@@ -59,8 +59,8 @@
     font-weight: normal;
     font-style: normal;
 
-}
 
+}
 
 
 /*  General CSS*/
@@ -110,11 +110,6 @@ h5, h6          { font-weight: bolder }
 }
 
 
-
-
-
-
-
 /*  Header  */
 @media (min-width:1000px){
     header{
@@ -143,10 +138,23 @@ h5, h6          { font-weight: bolder }
 		border-top-right-radius: 0.4em;
 	}
 	
+	a:link{
+		color: #454545;
+		font-family: "raleway-regular", arial;
+		text-decoration: none;
+		font-size: 14px;
+		letter-spacing: 1px 
+	}
+	
+	a:hover {
+		  color: #969595;
+	}
+	
 	/* (formato de HTML forms) Hecho por Ernesto Lang 3/22/15 */
 	form{
 		margin-top: 2cm;
 	}
+	
 	
     header .logo{
         margin-top: 100px;
@@ -439,6 +447,7 @@ h5, h6          { font-weight: bolder }
     margin: 0 auto;
     left: 50%;
     margin-left: -46.36363636363637%;
+	
 }
 
 .content{
