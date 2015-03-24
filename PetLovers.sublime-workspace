@@ -1,0 +1,178 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/PetLovers"
+	],
+	"file_history":
+	[
+		"/C/Users/JoséDavid/Google Drive/Tec/Datos/Tareas/2014/Tarea Corta 2 - Pilas, Colas, Ordenamientos/ArrayQueue/include/ArrayQueue.h",
+		"/C/Users/JoséDavid/Documents/Proyectos/Ayzek Studio/Web Base/css/style.css",
+		"/C/Users/JoséDavid/Videos/Samurai X/Samurai_X_-_Cap_36.txt",
+		"/C/Users/JoséDavid/Documents/Proyectos/Ayzek Studio/Logos/Leeme.txt",
+		"/F/Seagate Dashboard 2.0/JMORAPC/JMora/C/Users/Jose David/Documents/#s.txt",
+		"/C/Users/JoséDavid/Downloads/Pro_Tools_10.3.7_Win/KillerBugs.Patches.v3.For.Pro.Tools.HD.10.3.7.WiN/How to Install.txt",
+		"/C/Users/JoséDavid/Downloads/Instaladores OS.txt",
+		"/C/Users/JoséDavid/Downloads/Consultas/Consultas/Personas.txt",
+		"/C/Users/JoséDavid/Downloads/Consultas/Consultas/Mascotas.txt",
+		"/C/Users/JoséDavid/Downloads/SliderDemo.java",
+		"/C/Users/JoséDavid/AppData/Local/Temp/Rar$DIa0.581/readme.txt",
+		"/C/Program Files (x86)/Arduino/libraries/ProxSensor/HC_SR4/keywords.txt",
+		"/C/Users/JoséDavid/Downloads/Bluetooth_Shield_Demo_Code-master/README.md",
+		"/C/Users/JoséDavid/Downloads/HC_SR4_Demo_Arduino/keywords.txt",
+		"/C/Users/JoséDavid/Downloads/KMS/ReadMe KMSpico Install.txt",
+		"/C/Users/JoséDavid/Downloads/Office 2013 x64/Activador/stderr.txt",
+		"/C/Users/JoséDavid/Downloads/Seriales MFF 2013.txt",
+		"/C/Users/JoséDavid/AppData/Local/Temp/Rar$DIa0.787/ReadMe KMSpico Install.txt",
+		"/C/Users/JoséDavid/Desktop/hosts"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "PetLovers.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
