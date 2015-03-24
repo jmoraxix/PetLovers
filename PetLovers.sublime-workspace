@@ -7,6 +7,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "css/main.css",
+			"settings":
+			{
+				"buffer_size": 11411,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 4096,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -35,10 +51,12 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/PetLovers"
+		"/C/xampp/htdocs/PetLovers",
+		"/C/xampp/htdocs/PetLovers/css"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/PetLovers/.gitignore",
 		"/C/Users/JoséDavid/Google Drive/Tec/Datos/Tareas/2014/Tarea Corta 2 - Pilas, Colas, Ordenamientos/ArrayQueue/include/ArrayQueue.h",
 		"/C/Users/JoséDavid/Documents/Proyectos/Ayzek Studio/Web Base/css/style.css",
 		"/C/Users/JoséDavid/Videos/Samurai X/Samurai_X_-_Cap_36.txt",
@@ -61,7 +79,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -92,18 +110,78 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11411,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2605,
+								2605
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1375.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1013,
+								1013
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -135,7 +213,7 @@
 	"project": "PetLovers.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":

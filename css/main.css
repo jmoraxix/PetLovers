@@ -1,27 +1,3 @@
-/*
-
-    Template Author : pixelhint.com
-    Author Email    : contact@pixelhint.com
-    Template Name   : Magnetic
-    
-    
-    *****************************************
-    
-    
-    - Fonts
-    - General CSS
-    - Header
-    - Home/portfolio 
-    - Inner page 
-    - Map/Contact page  
-    - Tooltip 
-    - Responsive code
-  
-    
-*/
-
-
-
 /*  Fonts  */
 @font-face {
     font-family: 'raleway-regular';
@@ -34,8 +10,6 @@
     font-style: normal;
 
 }
-
-
 @font-face {
     font-family: 'raleway-bold';
     src: url('../fonts/raleway-bold.eot');
@@ -47,8 +21,6 @@
     font-style: normal;
 
 }
-
-
 @font-face {
     font-family: 'raleway-semibold';
     src: url('../fonts/raleway-semibold.eot');
@@ -61,7 +33,6 @@
 
 
 }
-
 
 /*  General CSS*/
 body{
@@ -150,11 +121,12 @@ h5, h6          { font-weight: bolder }
 		  color: #969595;
 	}
 	
-	/* (formato de HTML forms) Hecho por Ernesto Lang 3/22/15 */
+	/* (formato de HTML forms) Hecho por Ernesto Lang 3/22/15 
+        (Arreglo posicion) José Mora 3/23/15 
+    */
 	form{
-		margin-top: 2cm;
+		margin-top: 10px;
 	}
-	
 	
     header .logo{
         margin-top: 100px;
@@ -163,7 +135,7 @@ h5, h6          { font-weight: bolder }
     header nav ul{
         display: block;
         overflow: hidden;
-        margin-top: 100px;
+        margin-top: 30px;
         list-style: none;
     }
 
@@ -301,10 +273,6 @@ h5, h6          { font-weight: bolder }
     clear: both;
 }
 
-
-
-
-
 /*  Home/portfolio  */
 .main .work{
     display: block;
@@ -336,7 +304,6 @@ h5, h6          { font-weight: bolder }
     opacity: 1;
 }
 
-
 .work .caption .work_title{
     display: block;
     width: 100%;
@@ -359,12 +326,6 @@ h5, h6          { font-weight: bolder }
     border-bottom: 1px solid #bfbbbb;
     border-top: 1px solid #bfbbbb;
 }
-
-
-
-
-
-
 
 /*  Inner Page  */
 .top{
@@ -487,11 +448,6 @@ h5, h6          { font-weight: bolder }
 }
 
 
-
-
-
-
-
 /*  Contact page map  */
 #map .map_adresse{
     font-family: 'raleway-regular', arial;
@@ -510,11 +466,6 @@ h5, h6          { font-weight: bolder }
     font-family: 'raleway-bold', arial;
     font-weight: bolder;
 }
-
-
-
-
-
 
 
 /*  Tooltip  */
@@ -548,11 +499,6 @@ h5, h6          { font-weight: bolder }
     left: 50%;
     margin-left: -3px;
 }
-
-
-
-
-
 
 
 /*  Responsive code  */
