@@ -218,3 +218,4 @@ pip-log.txt
 ##Sublime proyect
 PetLovers.sublime-project
 PetLovers.sublime-workspace
+*.sublime-workspace
