@@ -152,7 +152,7 @@ h5, h6          { font-weight: bolder }
 	}
     
 	header .logo{
-        margin-top: 100px;
+        margin-top: 60px;
     }
 
     header nav ul{
@@ -357,7 +357,7 @@ h5, h6          { font-weight: bolder }
     overflow: hidden;
     display: block;
     position: relative;
-    background: url('../img/hero_image.jpg') no-repeat;
+    background: url('../img/banner.png') no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
