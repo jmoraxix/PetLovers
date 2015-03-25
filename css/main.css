@@ -109,6 +109,19 @@ h5, h6          { font-weight: bolder }
 		border-top-right-radius: 0.4em;
 	}
 	
+	label{
+		font-family: "raleway-regular", arial;
+	}
+	
+	
+	ul.registration{
+		list-style-type: none;
+	}
+	
+	ul li{
+		margin: 5px;
+	}
+	
 	a:link{
 		color: #454545;
 		font-family: "raleway-regular", arial;
@@ -121,14 +134,24 @@ h5, h6          { font-weight: bolder }
 		  color: #969595;
 	}
 	
-	/* (formato de HTML forms) Hecho por Ernesto Lang 3/22/15 
-        (Arreglo posicion) José Mora 3/23/15 
-    */
+	
 	form{
 		margin-top: 10px;
+		
+	/* (formato de HTML forms) Hecho por Ernesto Lang 3/22/15 
+       (Arreglo posicion) José Mora 3/23/15 */
 	}
 	
-    header .logo{
+	form.registration{
+		border: medium solid grey;
+		border-bottom-left-radius: 0.4em;
+		border-top-left-radius: 0.4em;
+		border-bottom-right-radius: 0.4em;
+		border-top-right-radius: 0.4em;
+		
+	}
+    
+	header .logo{
         margin-top: 100px;
     }
 
