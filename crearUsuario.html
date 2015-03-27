@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/findInputs.js"></script>
 </head>
 
 
@@ -53,7 +54,7 @@
 
 		<section class="wrapper">
 			<div class="content">
-				<form class="registration">
+				<form class="registration" method="POST">
 					<ul class="registration">
 						<li><label>Nombre de Usuario:</label></li>
 						<li><input type="text" name="username" title="Nombre de Usuario"/></li>
@@ -67,7 +68,7 @@
 						<li><input type="text" name="first last name" title="Primer Apellido"/></li>
 						<li><label>Segundo Apellido:</label></li>
 						<li><input type="text" name="second last name" title="Segundo Apellido"/></li>
-						<li><input type="submit" name="create user" title="Crear Usuario" value="Crear Usuario"></input></li>
+						<li><input type="button" name="create user" class="send_info" title="Crear Usuario" value="Crear Usuario"></input></li>
 					</ul>
 				</form>
 			</div><!-- end content -->
