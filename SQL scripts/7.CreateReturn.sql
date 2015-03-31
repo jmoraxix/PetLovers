@@ -1,0 +1,11 @@
+/*
+Script para crear la tabla de devolucion
+por Adrian Diaz Azofeifa
+*/
+
+CREATE TABLE Return
+(
+       return_code VARCHAR2(20) CONSTRAINT return_code_nn NOT NULL, /* El codigo de la devolucion*/
+       return_date DATE DEFAULT SYSDATE CONSTRAINT return_date_nn NOT NULL /* La fecha de la adopcion*/
+       
+);
