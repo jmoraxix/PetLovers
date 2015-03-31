@@ -1,0 +1,61 @@
+/*SQL Scripts */
+
+/* SCRIPT #1 Tablespaces */
+
+/*------------------------------------------------------------------*/
+CREATE TABLESPACE PetLovers_Data
+       DATAFILE 'this field requires your datafile directory'
+       SIZE 10M
+       REUSE
+       AUTOEXTEND ON
+       NEXT 512k
+       MAXSIZE 200M;
+       
+   
+CREATE TABLESPACE PetLovers_Indexes
+       DATAFILE 'this field requires your datafile directory'
+       SIZE 10M
+       REUSE
+       AUTOEXTEND ON
+       NEXT 512k
+       MAXSIZE 200M;
+	 
+/*------------------------------------------------------------------*/
+
+/* SCRIPT #2 PetLoversScheme(this is the main scheme)
+
+CREATE USER PetLoversScheme
+       identified by pet  						--Password para este usuario
+       DEFAULT TABLESPACE  PetLovers_Data
+       QUOTA 10M ON  PetLovers_Data
+       TEMPORARY TABLESPACE temp
+       QUOTA 5M ON system;
+       
+       
+CREATE ROLE PetLoversScheme
+       identified by pet;
+       
+GRANT CONNECT TO PetLoversScheme;
+GRANT CREATE TABLE TO PetLoversScheme;   
+GRANT CREATE VIEW TO PetLoversScheme;  
+GRANT CREATE TRIGGER TO PetLoversShcheme;
+GRANT CREATE PROCEDURE TO PetLoversScheme;
+GRANT UNLIMITED TABLESPACE TO PetLoversScheme;
+
+/*--------------------------------------------------*/
+
+/* SCRIPT #3  accounts table creation*/
+
+
+CREATE TABLE accounts 
+(
+       username VARCHAR2(20),
+       user_password VARCHAR2(16),
+       user_admin NUMBER(1)
+);
+
+ALTER TABLE accounts
+      ADD CONSTRAINT pk_username PRIMARY KEY (username)
+      USING INDEX TABLESPACE PetLovers_Indexes;
+      
+
