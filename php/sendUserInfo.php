@@ -8,7 +8,8 @@
 
 	$db_connection = oci_connect('PetLoversScheme', 'pet', 'localhost/petloversdbXDB');  /*Used to establish connection between database and server*/																										  
 	$finalArray = file_get_contents('php://input');									  /*Data retrieval*/			
-	$finalArray = json_decode($finalArray,true); 					/*JSON decoding*/
+	$finalArray = json_decode($finalArray,true); 
+	$error;					/*JSON decoding*/
 	echo var_dump($finalArray);
 	
 	$username = $finalArray['finalArray'][0];
@@ -18,13 +19,13 @@
 	$firstLastName = $finalArray['finalArray'][5];
 	$secondLastName = $finalArray['finalArray'][6];
 	
-	$sqlVariableAccountsTable = 'INSERT INTO accounts(username, user_password) VALUES(:username, :password)';  /* SQL statement to send */
+	$sqlVariableAccountsTable = 'CALL usuario_package.add_usuario(:username, :password)';  /* SQL statement to send */
 	$dataToInsert = oci_parse($db_connection, $sqlVariableAccountsTable);                         /* prepares statement to be sent to database */
 	
 	
 	                                     
 	if(!$db_connection){                                    /* checks if connection with the database works */
-		echo "Server could not connect to database";
+		exit ("Server could not connect to database");
 	}
 	else {
 		echo "Connection Established";
@@ -32,12 +33,14 @@
 	
 	oci_bind_by_name($dataToInsert, ':username', $username);                    /* binds variables to their string names */
 	oci_bind_by_name($dataToInsert, ':password', $password);
-	
-	
-	if(oci_execute($dataToInsert)){               /* statement is sent to the database, a print is made to indicate */
+	oci_execute($dataToInsert);
+	$error = oci_error($dataToInsert);              /* statement is sent to the database, a print is made to indicate */
+			
+	if($error == false){
 		echo "User created succesfully";
-	} else {
-		echo "User could not be created";
+	} else if ($error['code'] ==  0001) {
+		oci_close($db_connection);
+		exit ("User could not be created, the specified username already exists");
 	}
 	oci_close($db_connection);
 	

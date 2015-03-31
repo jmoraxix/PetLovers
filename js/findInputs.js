@@ -45,7 +45,7 @@ function serverInteraction() {
 	console.log(finalArray);
     JSONArray = JSON.stringify({finalArray: finalArray}); 
 	console.log(JSONArray);
-	xmlhttp.open("POST","phpFiles/sendUserInfo.php", true);
+	xmlhttp.open("POST","php/sendUserInfo.php", true);
 	xmlhttp.setRequestHeader("Content-type","application/json;charset=UTF-8");
 	xmlhttp.send(JSONArray);
 	console.log(xmlhttp.responseText);
