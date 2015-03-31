@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"crae",
+				"create_account"
+			],
+			[
 				"Li",
 				"LinkedList"
 			],
@@ -51,6 +55,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "inner.html",
+			"settings":
+			{
+				"buffer_size": 4985,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "createUser.html",
+			"settings":
+			{
+				"buffer_size": 3705,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3256,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/C++/C++.sublime-build",
 	"build_system_choices":
@@ -59,10 +87,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 334.0,
-		"last_filter": "origam: de",
+		"height": 127.0,
+		"last_filter": "pac:in",
 		"selected_items":
 		[
+			[
+				"pac:in",
+				"Package Control: Install Package"
+			],
 			[
 				"origam: de",
 				"Origami: Destroy Current Pane"
@@ -112,7 +144,7 @@
 				"Package Control: Add Repository"
 			]
 		],
-		"width": 464.0
+		"width": 528.0
 	},
 	"console":
 	{
@@ -136,10 +168,13 @@
 		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers",
 		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/css",
 		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/js",
-		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/phpFiles"
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/php"
 	],
 	"file_history":
 	[
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/createUser.html",
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/inner.html",
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/index.html",
 		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/crearUsuario.html",
 		"/C/Users/jdmoralo/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/contact.html",
@@ -149,7 +184,6 @@
 		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/inner.php",
 		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/index.php",
 		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/js/map.js",
-		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/inner.html",
 		"/C/Users/jdmoralo/Google Drive/Tec/Datos/Tareas/2015/Tarea Corta 2/TareaCorta2/main.cpp",
 		"/C/Users/jdmoralo/Google Drive/Tec/Datos/Tareas/2015/Tarea Corta 2/TareaCorta2/include/DLinkedList.h",
 		"/C/Users/jdmoralo/Google Drive/Tec/Datos/Tareas/2015/Tarea Corta 2/TareaCorta2/include/LinkedList.h",
@@ -157,7 +191,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -171,6 +205,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"php",
 			".html",
 			"global"
 		],
@@ -182,7 +217,7 @@
 		[
 			".php"
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -191,14 +226,102 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "inner.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4985,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								596,
+								596
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "createUser.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1054,
+								1054
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								978,
+								978
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"input":
 	{
