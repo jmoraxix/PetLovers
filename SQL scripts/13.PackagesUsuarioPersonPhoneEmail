@@ -48,18 +48,16 @@ END person_package;
 /*PACKAGE FOR PHONE */
 CREATE OR REPLACE PACKAGE phone_package AS 
        PROCEDURE add_phone
-         (p_number phone.phone_number%type,
-         p_id phone.person_id%type);
+         (p_number phone.phone_number%type);
 END phone_package;
 
 CREATE OR REPLACE PACKAGE BODY phone_package AS 
        PROCEDURE add_phone
-         (p_number phone.phone_number%type,
-         p_id phone.person_id%type)
+         (p_number phone.phone_number%type)
          IS 
          BEGIN 
-           INSERT INTO phone(phone_number,person_id)
-           VALUES (p_number,p_id);
+           INSERT INTO phone(phone_number)
+           VALUES (p_number);
          END add_phone;
 END phone_package;
 
@@ -67,18 +65,16 @@ END phone_package;
 /*PACKAGE FOR EMAIL*/
 CREATE OR REPLACE PACKAGE email_package AS 
        PROCEDURE add_email
-         (p_email email.email%type,
-         p_id email.person_id%type);
+         (p_email email.email%type);
 END email_package;
 
 CREATE OR REPLACE PACKAGE BODY email_package AS 
        PROCEDURE add_email
-         (p_email email.email%type,
-         p_id email.person_id%type)
+         (p_email email.email%type)
          IS 
          BEGIN 
-           INSERT INTO email(email,person_id)
-           VALUES (p_email, p_id);
+           INSERT INTO email(email)
+           VALUES (p_email);
          END add_email;
 END email_package;
   
