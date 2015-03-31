@@ -3,25 +3,123 @@
 	{
 		"selected_items":
 		[
+			[
+				"Li",
+				"LinkedList"
+			],
+			[
+				"A",
+				"ArrayList"
+			],
+			[
+				"en",
+				"endl"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"ge",
+				"getElement"
+			],
+			[
+				"hea",
+				"head_aux"
+			],
+			[
+				"c",
+				"current"
+			],
+			[
+				"go",
+				"goToStart"
+			],
+			[
+				"lista",
+				"lista_aux"
+			],
+			[
+				"ele",
+				"elements_aux"
+			],
+			[
+				"elem",
+				"elements"
+			]
 		]
 	},
 	"buffers":
 	[
 	],
-	"build_system": "",
+	"build_system": "Packages/C++/C++.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 334.0,
+		"last_filter": "origam: de",
 		"selected_items":
 		[
+			[
+				"origam: de",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"origam: crea",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"ori",
+				"Origami: Destroy Pane Below"
+			],
+			[
+				"pac: in",
+				"Package Control: Install Package"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"git i",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: un",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Repository"
+			]
 		],
-		"width": 0.0
+		"width": 464.0
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 266.0,
 		"history":
 		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
 	"distraction_free":
@@ -35,40 +133,31 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/PetLovers",
-		"/C/xampp/htdocs/PetLovers/css"
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers",
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/css",
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/js",
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/phpFiles"
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/PetLovers/css/main.css",
-		"/C/xampp/htdocs/PetLovers/index.html",
-		"/C/xampp/htdocs/PetLovers/inner.html",
-		"/C/xampp/htdocs/PetLovers/contact.html",
-		"/C/xampp/htdocs/PetLovers/crearUsuario.html",
-		"/C/xampp/htdocs/PetLovers/.gitignore",
-		"/C/Users/JoséDavid/Google Drive/Tec/Datos/Tareas/2014/Tarea Corta 2 - Pilas, Colas, Ordenamientos/ArrayQueue/include/ArrayQueue.h",
-		"/C/Users/JoséDavid/Documents/Proyectos/Ayzek Studio/Web Base/css/style.css",
-		"/C/Users/JoséDavid/Videos/Samurai X/Samurai_X_-_Cap_36.txt",
-		"/C/Users/JoséDavid/Documents/Proyectos/Ayzek Studio/Logos/Leeme.txt",
-		"/F/Seagate Dashboard 2.0/JMORAPC/JMora/C/Users/Jose David/Documents/#s.txt",
-		"/C/Users/JoséDavid/Downloads/Pro_Tools_10.3.7_Win/KillerBugs.Patches.v3.For.Pro.Tools.HD.10.3.7.WiN/How to Install.txt",
-		"/C/Users/JoséDavid/Downloads/Instaladores OS.txt",
-		"/C/Users/JoséDavid/Downloads/Consultas/Consultas/Personas.txt",
-		"/C/Users/JoséDavid/Downloads/Consultas/Consultas/Mascotas.txt",
-		"/C/Users/JoséDavid/Downloads/SliderDemo.java",
-		"/C/Users/JoséDavid/AppData/Local/Temp/Rar$DIa0.581/readme.txt",
-		"/C/Program Files (x86)/Arduino/libraries/ProxSensor/HC_SR4/keywords.txt",
-		"/C/Users/JoséDavid/Downloads/Bluetooth_Shield_Demo_Code-master/README.md",
-		"/C/Users/JoséDavid/Downloads/HC_SR4_Demo_Arduino/keywords.txt",
-		"/C/Users/JoséDavid/Downloads/KMS/ReadMe KMSpico Install.txt",
-		"/C/Users/JoséDavid/Downloads/Office 2013 x64/Activador/stderr.txt",
-		"/C/Users/JoséDavid/Downloads/Seriales MFF 2013.txt",
-		"/C/Users/JoséDavid/AppData/Local/Temp/Rar$DIa0.787/ReadMe KMSpico Install.txt",
-		"/C/Users/JoséDavid/Desktop/hosts"
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/crearUsuario.html",
+		"/C/Users/jdmoralo/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/contact.html",
+		"/C/Users/jdmoralo/AppData/Roaming/Sublime Text 3/Packages/GitGutter/GitGutter.sublime-settings",
+		"/C/Users/jdmoralo/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/contact.php",
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/inner.php",
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/index.php",
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/js/map.js",
+		"/C/Users/jdmoralo/Documents/Repositorios/PetLovers/inner.html",
+		"/C/Users/jdmoralo/Google Drive/Tec/Datos/Tareas/2015/Tarea Corta 2/TareaCorta2/main.cpp",
+		"/C/Users/jdmoralo/Google Drive/Tec/Datos/Tareas/2015/Tarea Corta 2/TareaCorta2/include/DLinkedList.h",
+		"/C/Users/jdmoralo/Google Drive/Tec/Datos/Tareas/2015/Tarea Corta 2/TareaCorta2/include/LinkedList.h",
+		"/C/Users/jdmoralo/Google Drive/Tec/Datos/Tareas/2015/Tarea Corta 2/TareaCorta2/include/ArrayList.h"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -82,6 +171,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".html",
+			"global"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -89,6 +180,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			".php"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -110,7 +202,7 @@
 	},
 	"input":
 	{
-		"height": 31.0
+		"height": 30.0
 	},
 	"layout":
 	{
@@ -135,10 +227,19 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 115.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
 	"project": "PetLovers.sublime-project",
 	"replace":
 	{
@@ -148,6 +249,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -155,15 +257,17 @@
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 380.0
+		"width": 0.0
 	},
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -177,7 +281,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 261.0,
+	"side_bar_width": 184.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
