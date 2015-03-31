@@ -25,7 +25,7 @@ CREATE TABLESPACE PetLovers_Indexes
 /* SCRIPT #2 PetLoversScheme(this is the main scheme)
 
 CREATE USER PetLoversScheme
-       identified by pet  						--Password para este usuario
+       identified by pet  						--Password for this particular scheme
        DEFAULT TABLESPACE  PetLovers_Data
        QUOTA 10M ON  PetLovers_Data
        TEMPORARY TABLESPACE temp
