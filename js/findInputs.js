@@ -10,8 +10,8 @@
 window.onload = function findSubmitButton() {
     var button = document.querySelector(".send_info").addEventListener("click", serverInteraction); /*Unobtrusive javascript listener, added to 
     																								create account button in html*/
-
 }
+
 
 function serverInteraction() {
   var xmlhttp;
@@ -45,8 +45,17 @@ function serverInteraction() {
 	console.log(finalArray);
     JSONArray = JSON.stringify({finalArray: finalArray}); 
 	console.log(JSONArray);
+	
+	xmlhttp.onreadystatechange=function()
+	  {
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200){
+			if (confirm(xmlhttp.responseText)){
+				window.location = 'index.html'
+			}  
+		  }
+	  }
+	
 	xmlhttp.open("POST","php/sendUserInfo.php", true);
 	xmlhttp.setRequestHeader("Content-type","application/json;charset=UTF-8");
 	xmlhttp.send(JSONArray);
-	console.log(xmlhttp.responseText);
 }

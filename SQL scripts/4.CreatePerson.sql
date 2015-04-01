@@ -21,7 +21,7 @@ por Adrian Diaz Azofeifa
 CREATE TABLE Phone
 (
 	   phone_number NUMBER(8) CONSTRAINT phone_nn NOT NULL,
-     person_id NUMBER(10)
+	   person_id NUMBER(10)
 
 );
 
