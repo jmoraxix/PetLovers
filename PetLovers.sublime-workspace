@@ -3,18 +3,35 @@
 	{
 		"selected_items":
 		[
+			[
+				"get",
+				"getAttribute"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "<!DOCTYPE html>\n<html>\n<head>\n	<title>PetLovers User Form</title>\n	<meta charset=\"utf-8\">\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\" />\n	<link rel=\"stylesheet\" type=\"text/css\" href=\"css/reset.css\">\n	<link rel=\"stylesheet\" type=\"text/css\" href=\"css/main.css\">\n    <script type=\"text/javascript\" src=\"js/jquery.js\"></script>\n    <script type=\"text/javascript\" src=\"js/main.js\"></script>\n	<script type=\"text/javascript\" src=\"js/findInputs.js\"></script>\n</head>\n\n\n<body>\n	<header>\n		<div class=\"logo\">\n			<a href=\"index.html\"><img src=\"img/logo.png\" title=\"PetLovers\" alt=\"PetLovers\"/></a>\n		</div><!-- end logo -->\n\n		<div id=\"menu_icon\" style=\"margin-top: 60px;\"></div>\n		<nav>\n			<ul>\n				<li><a href=\"index.html\">Home</a></li>\n				<li><a href=\"index.html\">Find a pet</a></li>\n				<li><a href=\"index.html\">View Pets</a></li>\n				<li><a href=\"index.html\">Top 10</a></li>\n				<li><a href=\"index.html\">Chat</a></li>\n				<li><a href=\"contact.html\">Contact Us</a></li>\n			</ul>\n		</nav><!-- end navigation menu -->\n\n		<div class=\"footer clearfix\">\n			<ul class=\"social clearfix\">\n				<li><a href=\"#\" class=\"fb\" data-title=\"Facebook\"></a></li>\n				<li><a href=\"#\" class=\"google\" data-title=\"Google +\"></a></li>\n			</ul><!-- end social -->\n\n			<div class=\"rights\">\n				<p>Copyright © 2015 PetLovers.</p>\n			</div>end rights\n		</div ><!-- end footer -->\n	</header><!-- end header -->\n	\n	\n	<section class=\"main clearfix\">\n\n		<section class=\"top\">	\n			<div class=\"wrapper content_header clearfix\">\n				<h1 class=\"title\">Acount creation</h1>\n			</div>		\n		</section><!-- end top -->\n\n		<section class=\"wrapper\">\n			<div class=\"content\">\n				<form id= \"form_info\" class=\"registration\" method=\"POST\">\n					<ul class=\"registration\">\n						<section class=\"content\">\n							<li>All fields are required</li>\n							<li><label>Username:</label></li>\n							<li><input type=\"text\" name=\"username\" title=\"Username\" maxlength=\"12\"/></li>\n							<li><label>Password:</label></li>\n							<li><input type=\"text\" name=\"password\" title=\"Password\" maxlength=\"16\"/></li>\n							<li><label>Confirm Password:</label></li>\n							<li><input type=\"text\" name=\"password\" title=\"Confirm Password\" maxlength=\"16\"/></li>\n							<li><label>Email:</label></li>\n							<li><input type=\"text\" name=\"email\" title=\"Email\"/></li>\n						</section>\n						<section class=\"content\" style=\"float:;\">\n							<li><label>First Name:</label></li>\n							<li><input type=\"text\" name=\"name\" title=\"Name\"/></li>\n							<li><label>First Last Name:</label></li>\n							<li><input type=\"text\" name=\"first_last_name\" title=\"First Last Name\"/></li>\n							<li><label>Second Last Name:</label></li>\n							<li><input type=\"text\" name=\"second_last_name\" title=\"Second Last Name\"/></li>\n							<li><input type=\"button\" name=\"create_user\" class=\"send_info\" title=\"Create Account\" value=\"Create Account\"></input></li>\n						</section>\n					</ul>\n				</form>\n			</div><!-- end content -->\n		</section>\n	</section><!-- end main -->\n\n</body>\n</html>",
-			"file": "createUser.html",
-			"file_size": 3112,
-			"file_write_time": 130724353966535993,
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 3027,
+				"buffer_size": 3454,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin.php",
+			"settings":
+			{
+				"buffer_size": 3261,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/ajaxEvents.js",
+			"settings":
+			{
+				"buffer_size": 1769,
 				"line_ending": "Windows"
 			}
 		}
@@ -62,17 +79,27 @@
 	[
 		"/C/xampp/htdocs/PetLovers",
 		"/C/xampp/htdocs/PetLovers/css",
-		"/C/xampp/htdocs/PetLovers/js"
+		"/C/xampp/htdocs/PetLovers/js",
+		"/C/xampp/htdocs/PetLovers/php"
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/PetLovers/inner.html",
+		"/C/xampp/htdocs/PetLovers/php/generateMenu.php",
+		"/C/xampp/htdocs/PetLovers/php/logout.php",
+		"/C/xampp/htdocs/PetLovers/php/validateUser.php",
 		"/C/xampp/htdocs/PetLovers/js/ajaxEvents.js",
+		"/C/xampp/htdocs/PetLovers/normalUserScreen.html",
+		"/C/xampp/htdocs/PetLovers/admin.php",
 		"/C/xampp/htdocs/PetLovers/createUser.html",
-		"/C/xampp/htdocs/PetLovers/index.html",
 		"/C/xampp/htdocs/PetLovers/contact.html",
-		"/C/xampp/htdocs/PetLovers/js/menu.js",
+		"/C/xampp/htdocs/PetLovers/index.php",
+		"/C/xampp/htdocs/PetLovers/inner.html",
+		"/C/xampp/htdocs/PetLovers/js/findInputs.js",
+		"/C/xampp/htdocs/PetLovers/js/jquery.js",
+		"/C/xampp/htdocs/PetLovers/petRegistrationForm.html",
 		"/C/xampp/htdocs/PetLovers/css/main.css",
+		"/C/xampp/htdocs/PetLovers/index.html",
+		"/C/xampp/htdocs/PetLovers/js/menu.js",
 		"/C/xampp/htdocs/PetLovers/crearUsuario.html",
 		"/C/xampp/htdocs/PetLovers/.gitignore",
 		"/C/Users/JoséDavid/Google Drive/Tec/Datos/Tareas/2014/Tarea Corta 2 - Pilas, Colas, Ordenamientos/ArrayQueue/include/ArrayQueue.h",
@@ -101,9 +128,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			"C:\\xampp\\htdocs\\PetLovers"
 		]
 	},
 	"find_state":
@@ -111,6 +139,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".html",
+			"top"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -118,6 +148,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			".php"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -128,33 +159,92 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "createUser.html",
+					"file": "index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3027,
+						"buffer_size": 3454,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2394,
-								2394
+								1163,
+								1171
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 765.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "admin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								227,
+								227
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/ajaxEvents.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

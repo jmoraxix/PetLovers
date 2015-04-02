@@ -8,31 +8,31 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script src="ajaxEvent.js" language="JavaScript"></script>
+    <script src="js/ajaxEvents.js" language="JavaScript"></script>
 </head>
 <body>
 
 	<header>
 		<div class="logo">
-			<a href="index.html"><img src="img/logo.png" title="PetLovers" alt="PetLovers"/></a>
+			<a href="index.php"><img src="img/logo.png" title="PetLovers" alt="PetLovers"/></a>
 		</div><!-- end logo -->
 
-		<form>
-			<input type="text" name="username" title="Username" placeholder="Username" autofocus required/>
+		<form action="php/validateUser.php" method="post" id="login_form">
+			<input type="text" name="user_name" title="Username" placeholder="Username" autofocus required/>
 			<input type="password" name="password" title="Password" placeholder="Password" required/>
 			<input type="submit"  name="login" value="Sign into account"/>
-			<input type="button"  name="create_account" value="Create account" align="right" onclick="window.location.href='createUser.html'"/>
+			<input type="button"  name="create_account" value="Create account" align="right" onclick="window.location.href='createUser.php'"/>
 		</form>
 
 		<div id="menu_icon"></div>
-		<nav>
+		<nav id="menu_pos">
 			<ul>
-				<li><a href="index.html" class="selected">Home</a></li>
-				<li><a href="index.html">Find a pet</a></li>
-				<li><a href="index.html">View pets</a></li>
-				<li><a href="index.html">Top 10</a></li>
-				<li><a href="index.html">Chat</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
+				<li><a id="menu" href="index.php" class="selected">Home</a></li>
+				<li><a id="menu" href="index.php">Find a pet</a></li>
+				<li><a id="menu" href="index.php">View pets</a></li>
+				<li><a id="menu" href="index.php">Top 10</a></li>
+				<li><a id="menu" href="index.php">Chat</a></li>
+				<li><a id="menu" href="contact.php">Contact Us</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
 
@@ -50,7 +50,7 @@
 
 	<section class="main clearfix">
 		<div class="work">
-			<a href="inner.html">
+			<a href="inner.php">
 				<img src="img/administrar_usuarios.png" class="media" alt=""/>
 				<div class="caption">
 					<div class="work_title">
@@ -61,7 +61,7 @@
 		</div>
 
 		<div class="work">
-			<a href="inner.html">
+			<a href="inner.php">
 				<img src="img/administrar_mascotas.png" class="media" alt=""/>
 				<div class="caption">
 					<div class="work_title">
@@ -72,7 +72,7 @@
 		</div>
 
 		<div class="work">
-			<a href="inner.html">
+			<a href="inner.php">
 				<img src="img/administrar_categorias.png" class="media" alt=""/>
 				<div class="caption">
 					<div class="work_title">
@@ -83,7 +83,7 @@
 		</div>
 
 		<div class="work">
-			<a href="inner.html">
+			<a href="inner.php">
 				<img src="img/ver_formularios.png" class="media" alt=""/>
 				<div class="caption">
 
@@ -95,7 +95,7 @@
 		</div>
 
 		<div class="work">
-			<a href="inner.html">
+			<a href="inner.php">
 				<img src="img/ver_lista_negra.png" class="media" alt=""/>
 				<div class="caption">
 					<div class="work_title">
@@ -106,7 +106,7 @@
 		</div>
 
 		<div class="work">
-			<a href="inner.html">
+			<a href="inner.php">
 				<img src="img/correo.png" class="media" alt=""/>
 				<div class="caption">
 					<div class="work_title">

@@ -15,18 +15,18 @@
 <body>
 	<header>
 		<div class="logo">
-			<a href="index.html"><img src="img/logo.png" title="PetLovers" alt="PetLovers"/></a>
+			<a href="index.php"><img src="img/logo.png" title="PetLovers" alt="PetLovers"/></a>
 		</div><!-- end logo -->
 
 		<div id="menu_icon" style="margin-top: 60px;"></div>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="index.html">Find a pet</a></li>
-				<li><a href="index.html">View Pets</a></li>
-				<li><a href="index.html">Top 10</a></li>
-				<li><a href="index.html">Chat</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="index.php">Find a pet</a></li>
+				<li><a href="index.php">View Pets</a></li>
+				<li><a href="index.php">Top 10</a></li>
+				<li><a href="index.php">Chat</a></li>
+				<li><a href="contact.php">Contact Us</a></li>
 				<li><input id="user_logout" type="button" name="logout" title="Logout" value="Log Out"/></li> 
 			</ul>
 		</nav><!-- end navigation menu -->

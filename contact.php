@@ -16,25 +16,25 @@
 
 	<header>
 		<div class="logo">
-			<a href="index.html"><img src="img/logo.png" title="PetLovers" alt="PetLovers"/></a>
+			<a href="index.php"><img src="img/logo.png" title="PetLovers" alt="PetLovers"/></a>
 		</div><!-- end logo -->
 
 		<form>
 			<input type="text" name="username" title="Username" placeholder="Username" autofocus required/>
 			<input type="password" name="password" title="Password" placeholder="Password" required/>
 			<input type="submit"  name="login" value="Sign into account"/>
-			<input type="button"  name="create_account" value="Create account" align="right" onclick="window.location.href='createUser.html'"/>
+			<input type="button"  name="create_account" value="Create account" align="right" onclick="window.location.href='createUser.php'"/>
 		</form>
 
 		<div id="menu_icon"></div>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="index.html">Find a pet</a></li>
-				<li><a href="index.html">View pets</a></li>
-				<li><a href="index.html">Top 10</a></li>
-				<li><a href="index.html">Chat</a></li>
-				<li><a href="contact.html" class="selected">Contact US</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="index.php">Find a pet</a></li>
+				<li><a href="index.php">View pets</a></li>
+				<li><a href="index.php">Top 10</a></li>
+				<li><a href="index.php">Chat</a></li>
+				<li><a href="contact.php" class="selected">Contact US</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
 

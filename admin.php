@@ -1,30 +1,44 @@
 <!DOCTYPE html>
+<?php
+        session_start();
+        if(!isset($_SESSION['name']))
+        {
+                header("location: index.php");
+        }
+        $name=$_SESSION['name'];
+?>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>PetLovers User </title>
+	<title>PetLovers</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script src="js/ajaxEvents.js" language="JavaScript"></script> -->
 </head>
 <body>
+
 	<header>
 		<div class="logo">
-			<a href="index.html"><img src="img/logo.png" title="PetLovers" alt="PetLovers"/></a>
+			<a href="index.php"><img src="img/logo.png" title="PetLovers" alt="PetLovers"/></a>
 		</div><!-- end logo -->
 
+		<em>Bienvenido <?php echo $name;?></em>
+		<form action="php/logout.php" method="post" id="log_out">
+			<input type="submit"  name="log_out" value="Log Out"/>
+		</form>
+		
 		<div id="menu_icon"></div>
 		<nav>
 			<ul>
-				<li><a href="index.html" class="selected">Home</a></li>
-				<li><a href="index.html">Find a pet</a></li>
-				<li><a href="index.html">View pets</a></li>
-				<li><a href="index.html">Top 10</a></li>
-				<li><a href="index.html">Chat</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-				<li><input id="user_logout" type="button" name="log out" title="Log Out" value ="Log Out">
+				<li><a href="index.php" class="selected">Home</a></li>
+				<li><a href="index.php">Find a pet</a></li>
+				<li><a href="index.php">View pets</a></li>
+				<li><a href="index.php">Top 10</a></li>
+				<li><a href="index.php">Chat</a></li>
+				<li><a href="contact.php">Contact Us</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
 
@@ -42,52 +56,52 @@
 
 	<section class="main clearfix">
 		<div class="work">
-			<a href="inner.html">
+			<a href="inner.php">
 				<img src="img/administrar_usuarios.png" class="media" alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<h1>Adopt A Pet</h1>
+						<h1>User administration</h1>
 					</div>
 				</div>
 			</a>
 		</div>
 
 		<div class="work">
-			<a href="inner.html">
+			<a href="inner.php">
 				<img src="img/administrar_mascotas.png" class="media" alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<h1>Your Pets</h1>
+						<h1>Pet administration</h1>
 					</div>
 				</div>
 			</a>
 		</div>
 
 		<div class="work">
-			<a href="inner.html">
+			<a href="inner.php">
 				<img src="img/administrar_categorias.png" class="media" alt=""/>
 				<div class="caption">
 					<div class="work_title">
-						<h1>Return A Pet</h1>
+						<h1>Category administration</h1>
 					</div>
 				</div>
 			</a>
 		</div>
 
 		<div class="work">
-			<a href="inner.html">
+			<a href="inner.php">
 				<img src="img/ver_formularios.png" class="media" alt=""/>
 				<div class="caption">
 
 					<div class="work_title">
-						<h1>Register A Pet</h1>
+						<h1>View forms</h1>
 					</div>
 				</div>
 			</a>
 		</div>
 
 		<div class="work">
-			<a href="inner.html">
+			<a href="inner.php">
 				<img src="img/ver_lista_negra.png" class="media" alt=""/>
 				<div class="caption">
 					<div class="work_title">
@@ -98,7 +112,7 @@
 		</div>
 
 		<div class="work">
-			<a href="inner.html">
+			<a href="inner.php">
 				<img src="img/correo.png" class="media" alt=""/>
 				<div class="caption">
 					<div class="work_title">
@@ -108,7 +122,6 @@
 			</a>
 		</div>
 	</section><!-- end main -->
-
-
+	
 </body>
 </html>
