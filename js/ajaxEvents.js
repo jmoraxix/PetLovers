@@ -1,11 +1,19 @@
-addEvent(window,'load',inicializarEventos,false);
+addEvent(window,'load',cargarMenu,false);
+
+
+function cargarMenu()
+{
+  var ob=document.getElementById('menu_pos');
+
+  inicializarEventos();
+}
 
 function inicializarEventos()
 {
   var ob;
   for(f=1;f<=12;f++)
   {
-    ob=document.getElementById('enlace'+f);
+    ob=document.getElementById('menu');
     addEvent(ob,'click',presionEnlace,false);
   }
 }

@@ -1,6 +1,6 @@
 /* Made By Ernesto Lang 3/22/15, modified 3/30/15 */
 
-/* The following script retrieves the data from the html form found in createUser.html, first it creates an xmlHTTP object in order to send 
+/* The following script retrieves the data from the html form found in createUser.php, first it creates an xmlHTTP object in order to send 
  * data through ajax, once this is done an array is extracted from the html form, the relevant data, meaning the spaces that are not empty, is then 
  * put into another array which is then placed into a JSON and sent to the server(PHP). Once the server responds, depending on whether it succeeded
  * on passing the data to the database or not, a message will be displayed to the user through an alert in the browser
@@ -50,7 +50,7 @@ function serverInteraction() {
 	  {
 		  if (xmlhttp.readyState==4 && xmlhttp.status==200){
 			if (confirm(xmlhttp.responseText)){
-				window.location = 'index.html'
+				window.location = 'index.php'
 			}  
 		  }
 	  }
