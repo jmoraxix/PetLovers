@@ -353,7 +353,7 @@ h5, h6          { font-weight: bolder }
 /*  Inner Page  */
 .top{
     width: 100%;
-    height: 350px;
+    height: 270px;
     overflow: hidden;
     display: block;
     position: relative;
