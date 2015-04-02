@@ -20,7 +20,7 @@ CREATE OR REPLACE PACKAGE BODY usuario_package AS
        
        PROCEDURE list_usernames_passwords IS
          u_name Usuario.username%type;
-         u_password Usuario.user_password%type;
+         u_password Usuario.user_Password%type;
        CURSOR username_password IS
          SELECT username,user_password
          FROM Usuario;
@@ -29,7 +29,7 @@ CREATE OR REPLACE PACKAGE BODY usuario_package AS
          LOOP
            FETCH username_password INTO u_name, u_password;
            EXIT WHEN username_password%notfound;
-           dbms_output.put_line(u_name ||' '|| u_password);
+           dbms_output.put_line(u_name || '' || u_password);
          END LOOP;
          CLOSE username_password;
        END list_usernames_passwords;
