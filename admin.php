@@ -24,11 +24,6 @@
 		<div class="logo">
 			<a href="index.php"><img src="img/logo.png" title="PetLovers" alt="PetLovers"/></a>
 		</div><!-- end logo -->
-
-		<em>Bienvenido <?php echo $name;?></em>
-		<form action="php/logout.php" method="post" id="log_out">
-			<input type="submit"  name="log_out" value="Log Out"/>
-		</form>
 		
 		<div id="menu_icon"></div>
 		<nav>
@@ -53,74 +48,102 @@
 			</div><!-- end rights -->
 		</div ><!-- end footer -->
 	</header><!-- end header -->
+<section class="main clearfix">
+		<section class="top">	
+			<div class="wrapper content_header clearfix">
+				<h1 class="title">Bienvenido <em><?php echo $name;?></em> 
+					<form action="php/logout.php" method="post" id="log_out">
+						<input type="submit"  name="log_out" value="Log Out"/>
+					</form>
+				</h1>
+			</div>		
+		</section><!-- end top -->
 
-	<section class="main clearfix">
-		<div class="work">
-			<a href="inner.php">
-				<img src="img/administrar_usuarios.png" class="media" alt=""/>
-				<div class="caption">
-					<div class="work_title">
-						<h1>User administration</h1>
-					</div>
+		<section class="wrapper">
+			<div class="content">
+				<div class="work">
+					<a href="inner.php">
+						<img src="img/administrar_usuarios.png" class="media" alt=""/>
+						<div class="caption">
+							<div class="work_title">
+								<h1>User administration</h1>
+							</div>
+						</div>
+					</a>
 				</div>
-			</a>
-		</div>
 
-		<div class="work">
-			<a href="inner.php">
-				<img src="img/administrar_mascotas.png" class="media" alt=""/>
-				<div class="caption">
-					<div class="work_title">
-						<h1>Pet administration</h1>
-					</div>
+				<div class="work">
+					<a href="inner.php">
+						<img src="img/administrar_mascotas.png" class="media" alt=""/>
+						<div class="caption">
+							<div class="work_title">
+								<h1>Pet administration</h1>
+							</div>
+						</div>
+					</a>
 				</div>
-			</a>
-		</div>
 
-		<div class="work">
-			<a href="inner.php">
-				<img src="img/administrar_categorias.png" class="media" alt=""/>
-				<div class="caption">
-					<div class="work_title">
-						<h1>Category administration</h1>
-					</div>
+				<div class="work">
+					<a href="inner.php">
+						<img src="img/administrar_categorias.png" class="media" alt=""/>
+						<div class="caption">
+							<div class="work_title">
+								<h1>Category administration</h1>
+							</div>
+						</div>
+					</a>
 				</div>
-			</a>
-		</div>
 
-		<div class="work">
-			<a href="inner.php">
-				<img src="img/ver_formularios.png" class="media" alt=""/>
-				<div class="caption">
+				<div class="work">
+					<a href="inner.php">
+						<img src="img/ver_formularios.png" class="media" alt=""/>
+						<div class="caption">
 
-					<div class="work_title">
-						<h1>View forms</h1>
-					</div>
+							<div class="work_title">
+								<h1>View forms</h1>
+							</div>
+						</div>
+					</a>
 				</div>
-			</a>
-		</div>
 
-		<div class="work">
-			<a href="inner.php">
-				<img src="img/ver_lista_negra.png" class="media" alt=""/>
-				<div class="caption">
-					<div class="work_title">
-						<h1>Black list</h1>
-					</div>
+				<div class="work">
+					<a href="inner.php">
+						<img src="img/ver_lista_negra.png" class="media" alt=""/>
+						<div class="caption">
+							<div class="work_title">
+								<h1>Black list</h1>
+							</div>
+						</div>
+					</a>
 				</div>
-			</a>
-		</div>
 
-		<div class="work">
-			<a href="inner.php">
-				<img src="img/correo.png" class="media" alt=""/>
-				<div class="caption">
-					<div class="work_title">
-						<h1>View e-mails</h1>
-					</div>
+				<div class="work">
+					<a href="inner.php">
+						<img src="img/correo.png" class="media" alt=""/>
+						<div class="caption">
+							<div class="work_title">
+								<h1>View e-mails</h1>
+							</div>
+						</div>
+					</a>
 				</div>
-			</a>
-		</div>
+			</div><!-- end content -->
+		</section>	
+
+		<section class="wrapper">
+			<div class="side_bar">
+				<div class="work">
+					<a href="inner.php">
+						<img src="img/administrar_usuarios.png" class="media" alt=""/>
+						<div class="caption">
+							<div class="work_title">
+								<h1>User administration</h1>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div><!-- end content -->
+		</section>
 	</section><!-- end main -->
 	
 </body>

@@ -15,7 +15,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 3454,
+				"buffer_size": 2922,
 				"line_ending": "Windows"
 			}
 		},
@@ -23,7 +23,7 @@
 			"file": "admin.php",
 			"settings":
 			{
-				"buffer_size": 3261,
+				"buffer_size": 3992,
 				"line_ending": "Windows"
 			}
 		},
@@ -43,10 +43,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "pci",
+		"height": 150.0,
+		"last_filter": "wrap",
 		"selected_items":
 		[
+			[
+				"wrap",
+				"Wrap Plus: Wrap Lines"
+			],
 			[
 				"pci",
 				"Package Control: Install Package"
@@ -124,7 +128,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -150,7 +154,7 @@
 		[
 			".php"
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -159,7 +163,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -168,15 +172,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3454,
+						"buffer_size": 2922,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1163,
-								1171
+								2060,
+								2060
 							]
 						],
 						"settings":
@@ -185,10 +189,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 225.0,
+						"translation.y": 512.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -197,15 +201,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3261,
+						"buffer_size": 3992,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								227,
-								227
+								2374,
+								2374
 							]
 						],
 						"settings":
@@ -214,10 +218,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 675.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -247,7 +251,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -255,7 +259,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"input":
 	{
