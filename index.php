@@ -51,39 +51,22 @@
 	<section class="main clearfix">
 		<section class="top">	
 			<div class="wrapper content_header clearfix">
-				<h1 class="title">Bienvenido a PetLovers</h1>
+				<!-- <h1 class="title">Bienvenido a PetLovers</h1> -->			
 			</div>		
 		</section><!-- end top -->
-
-		<section class="wrapper">
-			<div class="content">
-				<div class="work">
+		
+		<section>
+			<section class="main_content" id="content">
+				<h1>Bienvenido a PetLovers</h1>
+			</section> <!-- end content -->
+	
+			<section class="side_bar">
+				<div>
 					<a href="inner.php">
 						<img src="img/administrar_usuarios.png" class="media" alt=""/>
-						<div class="caption">
-							<div class="work_title">
-								<h1>User administration</h1>
-							</div>
-						</div>
 					</a>
-				</div>
-			</div><!-- end content -->
-		</section>	
-
-
-		<section class="wrapper">
-			<div class="side_bar">
-				<div class="work">
-					<a href="inner.php">
-						<img src="img/administrar_usuarios.png" class="media" alt=""/>
-						<div class="caption">
-							<div class="work_title">
-								<h1>User administration</h1>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div><!-- end content -->
+				</div><!-- end right bar -->
+			</section>
 		</section>
 	</section><!-- end main -->
 	

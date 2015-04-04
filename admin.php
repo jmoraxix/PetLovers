@@ -19,7 +19,6 @@
     <!-- <script src="js/ajaxEvents.js" language="JavaScript"></script> -->
 </head>
 <body>
-
 	<header>
 		<div class="logo">
 			<a href="index.php"><img src="img/logo.png" title="PetLovers" alt="PetLovers"/></a>
@@ -48,7 +47,8 @@
 			</div><!-- end rights -->
 		</div ><!-- end footer -->
 	</header><!-- end header -->
-<section class="main clearfix">
+	
+	<section class="main clearfix">
 		<section class="top">	
 			<div class="wrapper content_header clearfix">
 				<h1 class="title">Bienvenido <em><?php echo $name;?></em> 

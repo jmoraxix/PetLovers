@@ -353,7 +353,7 @@ h5, h6          { font-weight: bolder }
 /*  Inner Page  */
 .top{
     width: 100%;
-    height: 270px;
+    height: 223px;
     overflow: hidden;
     display: block;
     position: relative;
@@ -470,6 +470,37 @@ h5, h6          { font-weight: bolder }
 
 }
 
+.main_section{
+    width: 100%;
+    height: 100%;
+}
+
+section.main_content {
+    float: left;
+    padding: 15px 10px;
+    background: #aaa;
+    height: 100%;
+    width: 100;
+    position: fixed;
+    column-fill: auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section.side_bar{
+    float: right;
+    padding: 8px 8px;
+    background: #bbb;
+    width: 30%;
+    height: 100%;
+    display: block;
+    column-fill: content;
+    border: 2px solid #a1a1a1;
+    border-radius: 10px;
+}
 
 /*  Contact page map  */
 #map .map_adresse{
@@ -525,12 +556,12 @@ h5, h6          { font-weight: bolder }
 
 
 /*  Responsive code  */
-@media (max-width:1100px){
+@media (max-width:1000px){
 
     header{
         display: block;
         width: 100%;
-        min-height: 100px;
+        min-height: 80px;
         padding: 0;
         position: relative;
     }
