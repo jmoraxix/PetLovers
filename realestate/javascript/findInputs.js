@@ -8,10 +8,16 @@
 
 
 window.onload = function findSubmitButton() {
-    var button = document.getElementsByName("Submit").addEventListener("click", serverInteraction); /*Unobtrusive javascript listener, added to 
+    var button = document.getElementById("Submit_User").addEventListener("click", serverInteraction); /*Unobtrusive javascript listener, added to 
     																								create account button in html*/
 }
 
+function clearInputs(Array){
+	for(var i = 0; i < Array.length; i++){
+		Array[i].value = '';
+	}
+	
+}
 
 function serverInteraction() {
   var xmlhttp;
@@ -19,6 +25,8 @@ function serverInteraction() {
   var finalArray = [];
   var JSONArray;
   var userId;
+  var serverResponse;
+  var phoneNumber;
   if (window.XMLHttpRequest){
 	  xmlhttp = new XMLHttpRequest();        /* Used for IE7+,FireFox, Opera, Chrome, Safari */
   } else if (window.ActiveXObject) {
@@ -29,10 +37,17 @@ function serverInteraction() {
   }
   
   /* The following section validates if the required inputs have text in them and if the password fields match*/
-  inputArray = document.querySelectorAll("input[type=text],input[type=password]")
+  inputArray = document.querySelectorAll("input[id=register]")
   if (inputArray[1].value != inputArray[2].value){
 	  alert("Password doesn't match, please make sure your password matches")
+	  clearInputs(inputArray);
 	  return false;
+  }
+  
+  phoneNumber = inputArray[7].value;
+  if (isNaN(phoneNumber)){
+	  alert("You must enter a valid phone number");
+	  clearInputs(inputArray);
   }
   
   for(var i = 0; i < inputArray.length; i++){
@@ -42,16 +57,20 @@ function serverInteraction() {
 	  }
 		finalArray[i] = inputArray[i].value;
   }
-	console.log(finalArray);
     JSONArray = JSON.stringify({finalArray: finalArray}); 
-	console.log(JSONArray);
 	
 	xmlhttp.onreadystatechange=function()
 	  {
 		  if (xmlhttp.readyState==4 && xmlhttp.status==200){
-			if (confirm(xmlhttp.responseText)){
-				window.location = 'index.php'
-			}  
+				serverResponse = xmlhttp.responseText 
+				var code = parseInt(serverResponse);
+				if (code == 0){
+					alert("The username you have selected already exists. Press ok to re-enter data")
+					clearInputs(inputArray);
+				} else if(code == 1){
+					alert("Account created successfully. Press OK to be redirected");
+					window.location = "index.php";
+				}
 		  }
 	  }
 	
