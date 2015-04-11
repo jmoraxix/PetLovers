@@ -1,0 +1,2 @@
+ALTER TABLE Pet
+  ADD CONSTRAINT pet_pk PRIMARY KEY (pet_code);
