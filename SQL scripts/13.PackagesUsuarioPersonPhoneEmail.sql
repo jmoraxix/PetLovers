@@ -11,28 +11,31 @@ CREATE OR REPLACE PACKAGE usuario_package AS
 END usuario_package; 
 
 
+
+CREATE OR REPLACE PACKAGE usuario_package AS
+       PROCEDURE add_user(user_username usuario.username%type, user_password usuario.user_password%type);
+       FUNCTION findUsers (u_name usuario.username%type, u_pass usuario.user_password%type)
+       RETURN NUMBER;
+END usuario_package; 
+  
 CREATE OR REPLACE PACKAGE BODY usuario_package AS 
-       PROCEDURE add_usuario(usuario_username usuario.username%type,usuario_password usuario.user_password%type)
+       PROCEDURE add_user(user_username usuario.username%type,user_password usuario.user_password%type)
        IS 
        BEGIN
-         INSERT INTO usuario (username, user_password) VALUES (usuario_username, usuario_password);
-       END add_usuario;
+         INSERT INTO usuario (username, user_password) VALUES (user_username, user_password);
+       END add_user;
        
-       PROCEDURE list_usernames_passwords IS
-         u_name Usuario.username%type;
-         u_password Usuario.user_password%type;
-       CURSOR username_password IS
-         SELECT username,user_password
-         FROM Usuario;
+       FUNCTION findUsers (u_name usuario.username%type, u_pass usuario.user_password%type)
+       RETURN NUMBER
+       IS 
+         counter NUMBER := 0;
        BEGIN 
-         OPEN username_password;
-         LOOP
-           FETCH username_password INTO u_name, u_password;
-           EXIT WHEN username_password%notfound;
-           dbms_output.put_line(u_name ||' '|| u_password);
-         END LOOP;
-         CLOSE username_password;
-       END list_usernames_passwords;
+         SELECT COUNT(*) INTO counter
+         FROM usuario
+         WHERE usuario.username = u_name
+         AND usuario.user_password = u_pass;
+         RETURN counter;
+       END;
 END usuario_package;
                          
 /*-----------------------------------------------------------------------------------------------------------*/

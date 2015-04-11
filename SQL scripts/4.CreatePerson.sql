@@ -9,6 +9,7 @@ CREATE TABLE Person
        first_last_name VARCHAR2(16) CONSTRAINT first_last_name_nn NOT NULL, /* El primer apellido*/
        second_last_name VARCHAR2(16),
        person_id NUMBER(10),
+	   blacklist NUMBER(1);
        username VARCHAR2(12)
        
 );
