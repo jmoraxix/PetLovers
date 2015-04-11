@@ -37,7 +37,19 @@ CREATE OR REPLACE PACKAGE BODY usuario_package AS
          RETURN counter;
        END;
 END usuario_package;
-                         
+        
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*SEQUENCE FOR PERSON ID*/
+
+CREATE SEQUENCE person_id_generator 
+  START WITH 1
+  INCREMENT BY 1
+  MINVALUE 1
+  MAXVALUE 1000000000
+  NOCACHE
+  NOCYCLE;	
 /*-----------------------------------------------------------------------------------------------------------*/
 /*PACKAGE FOR PERSON*/
 /* This package is used to make queries through PHP whenever, data must be 
@@ -59,8 +71,8 @@ CREATE OR REPLACE PACKAGE BODY person_package AS
          p_username person.username%type)
         IS 
         BEGIN 
-          INSERT INTO person(person_name,first_last_name,second_last_name,username)
-          VALUES (p_name, p_first_ln, p_second_ln, p_username);
+          INSERT INTO person(person_id, person_name,first_last_name,second_last_name,username)
+          VALUES (person_id_generator.nextval,p_name, p_first_ln, p_second_ln, p_username);
         END add_person;
 END person_package; 
 
@@ -68,16 +80,21 @@ END person_package;
 /*PACKAGE FOR PHONE */
 CREATE OR REPLACE PACKAGE phone_package AS 
        PROCEDURE add_phone
-         (p_number phone.phone_number%type);
+         (p_number phone.phone_number%type,
+          p_username person.username%type);
 END phone_package;
 
 CREATE OR REPLACE PACKAGE BODY phone_package AS 
        PROCEDURE add_phone
-         (p_number phone.phone_number%type)
+         (p_number phone.phone_number%type, 
+          p_username person.username%type)
          IS 
          BEGIN 
-           INSERT INTO phone(phone_number)
-           VALUES (p_number);
+           INSERT INTO phone(person_id, phone_number)
+           VALUES ((SELECT person.person_id
+                   FROM PERSON 
+                   WHERE p_username = person.username), 
+                   p_number);
          END add_phone;
 END phone_package;
 
@@ -85,16 +102,22 @@ END phone_package;
 /*PACKAGE FOR EMAIL*/
 CREATE OR REPLACE PACKAGE email_package AS 
        PROCEDURE add_email
-         (p_email email.email%type);
+         (p_email email.email%type, 
+          p_username person.username%type);
 END email_package;
 
 CREATE OR REPLACE PACKAGE BODY email_package AS 
        PROCEDURE add_email
-         (p_email email.email%type)
+         (p_email email.email%type,
+         p_username person.username%type)
          IS 
          BEGIN 
-           INSERT INTO email(email)
-           VALUES (p_email);
+           INSERT INTO email(person_id, email)
+           VALUES ((SELECT person.person_id
+                   FROM PERSON 
+                   WHERE p_username = person.username),
+                   p_email);
          END add_email;
 END email_package;
+
   
