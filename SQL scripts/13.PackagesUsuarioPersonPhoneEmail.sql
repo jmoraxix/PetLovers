@@ -6,13 +6,6 @@ whenever necessary to make any queries, if any other special queries are require
 be added to this package when it concerns USUARIO */
 
 CREATE OR REPLACE PACKAGE usuario_package AS
-       PROCEDURE add_usuario(usuario_username usuario.username%type, usuario_password usuario.user_password%type);
-       PROCEDURE list_usernames_passwords;
-END usuario_package; 
-
-
-
-CREATE OR REPLACE PACKAGE usuario_package AS
        PROCEDURE add_user(user_username usuario.username%type, user_password usuario.user_password%type);
        FUNCTION findUsers (u_name usuario.username%type, u_pass usuario.user_password%type)
        RETURN NUMBER;
