@@ -5,9 +5,10 @@ por Adrian Diaz Azofeifa
 
 CREATE TABLE Usuario
 (
-       username VARCHAR2(12), /* El nombre de usuario*/
-       user_password VARCHAR2(16),  /*El password*/
-       user_type NUMBER(1) /*El tipo de usuario: administrador(1) o normal(0)*/
+       user_name VARCHAR2(10), /* Users name*/ 
+       user_id NUMBER(10)  /* The primary key*/ 
+       user_password VARCHAR2(16),  /*password*/
+       user_type NUMBER(1) /*The type of user Administrative(1) or regular(0) */
        
 );
 

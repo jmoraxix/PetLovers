@@ -6,6 +6,5 @@ Script for creating Pet Size table
 CREATE TABLE PetSize
 (
 		pet_size VARCHAR(20) CONSTRAINT pet_size_nn NOT NULL, 
-		pet_space_required NUMBER(1),  /*1 if it requires space, 2 if it doesn't*/
 		pet_size_code NUMBER(10) /*PRIMARY KEY*/
 );
