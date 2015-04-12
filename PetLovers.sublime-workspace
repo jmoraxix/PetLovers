@@ -4,18 +4,6 @@
 		"selected_items":
 		[
 			[
-				"cl",
-				"clip"
-			],
-			[
-				"pso",
-				"position"
-			],
-			[
-				"wid",
-				"width"
-			],
-			[
 				"get",
 				"getAttribute"
 			]
@@ -24,37 +12,10 @@
 	"buffers":
 	[
 		{
-			"file": "index.php",
+			"file": "Project/header.php",
 			"settings":
 			{
-				"buffer_size": 2551,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/main.css",
-			"settings":
-			{
-				"buffer_size": 12284,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin.php",
-			"settings":
-			{
-				"buffer_size": 3994,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "addEvent(window,'load',cargarMenu,false);\n\nfunction cargarMenu()\n{\n  var ob=document.getElementById('menu_pos');\n\n  inicializarEventos();\n}\n\nfunction inicializarEventos()\n{\n  var ob;\n  for(f=1;f<=12;f++)\n  {\n    ob=document.getElementById('menu');\n    addEvent(ob,'click',presionEnlace,false);\n  }\n}\n\nfunction presionEnlace(e)\n{\n  if (window.event)\n  {\n    window.event.returnValue=false;\n    var url=window.event.srcElement.getAttribute('href');\n    cargarHoroscopo(url);     \n  }\n  else\n    if (e)\n    {\n      e.preventDefault();\n      var url=e.target.getAttribute('href');\n      cargarHoroscopo(url);     \n    }\n}\n\n\nvar conexion1;\nfunction cargarHoroscopo(url) \n{\n  if(url=='')\n  {\n    return;\n  }\n  conexion1=crearXMLHttpRequest();\n  conexion1.onreadystatechange = procesarEventos;\n  conexion1.open(\"GET\", url, true);\n  conexion1.send(null);\n}\n\nfunction procesarEventos()\n{\n  var detalles = document.getElementById(\"detalles\");\n  if(conexion1.readyState == 4)\n  {\n    detalles.innerHTML = conexion1.responseText;\n  } \n  else \n  {\n    detalles.innerHTML = 'Cargando...';\n  }\n}\n\n//***************************************\n//Funciones comunes a todos los problemas\n//***************************************\nfunction addEvent(elemento,nomevento,funcion,captura)\n{\n  if (elemento.attachEvent)\n  {\n    elemento.attachEvent('on'+nomevento,funcion);\n    return true;\n  }\n  else  \n    if (elemento.addEventListener)\n    {\n      elemento.addEventListener(nomevento,funcion,captura);\n      return true;\n    }\n    else\n      return false;\n}\n\nfunction crearXMLHttpRequest() \n{\n  var xmlHttp=null;\n  if (window.ActiveXObject) \n    xmlHttp = new ActiveXObject(\"Microsoft.XMLHTTP\");\n  else \n    if (window.XMLHttpRequest) \n      xmlHttp = new XMLHttpRequest();\n  return xmlHttp;\n}",
-			"file": "js/ajaxEvents.js",
-			"file_size": 1862,
-			"file_write_time": 130725709698863290,
-			"settings":
-			{
-				"buffer_size": 1768,
+				"buffer_size": 3219,
 				"line_ending": "Windows"
 			}
 		}
@@ -66,13 +27,13 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "w",
+		"height": 104.0,
+		"last_filter": "comme",
 		"selected_items":
 		[
 			[
-				"w",
-				"HTML: Wrap Selection With Tag"
+				"comme",
+				"Toggle Block Comment"
 			],
 			[
 				"pci",
@@ -109,21 +70,34 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/PetLovers",
-		"/C/xampp/htdocs/PetLovers/css",
-		"/C/xampp/htdocs/PetLovers/js",
-		"/C/xampp/htdocs/PetLovers/php"
+		"/C/xampp/htdocs/PetLovers/Project",
+		"/C/xampp/htdocs/PetLovers/Project/assets"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/PetLovers/Project/footer.php",
+		"/C/xampp/htdocs/PetLovers/Project/buysalerent.php",
+		"/C/xampp/htdocs/PetLovers/Project/assets/style.css",
+		"/C/xampp/htdocs/PetLovers/Project/index.php",
+		"/C/xampp/htdocs/PetLovers/Project/property-detail.php",
+		"/C/Users/JoséDavid/Downloads/PackagePets.sql",
+		"/C/xampp/htdocs/PetLovers/Project/header.php",
+		"/C/xampp/htdocs/PetLovers/Project/petRegistrationForm.php",
+		"/C/xampp/htdocs/PetLovers/Project/register.php",
+		"/C/xampp/htdocs/PetLovers/Project/about.php",
+		"/C/xampp/htdocs/PetLovers/Project/agents.php",
+		"/C/xampp/htdocs/PetLovers/Project/blog.php",
+		"/C/xampp/htdocs/PetLovers/Project/blogdetail.php",
+		"/C/xampp/htdocs/PetLovers/Project/contact.php",
+		"/C/xampp/htdocs/PetLovers/js/ajaxEvents.js",
+		"/C/xampp/htdocs/PetLovers/index.php",
+		"/C/xampp/htdocs/PetLovers/admin.php",
 		"/C/xampp/htdocs/PetLovers/php/generateMenu.php",
 		"/C/xampp/htdocs/PetLovers/php/logout.php",
 		"/C/xampp/htdocs/PetLovers/php/validateUser.php",
-		"/C/xampp/htdocs/PetLovers/js/ajaxEvents.js",
 		"/C/xampp/htdocs/PetLovers/normalUserScreen.html",
-		"/C/xampp/htdocs/PetLovers/admin.php",
 		"/C/xampp/htdocs/PetLovers/createUser.html",
 		"/C/xampp/htdocs/PetLovers/contact.html",
-		"/C/xampp/htdocs/PetLovers/index.php",
 		"/C/xampp/htdocs/PetLovers/inner.html",
 		"/C/xampp/htdocs/PetLovers/js/findInputs.js",
 		"/C/xampp/htdocs/PetLovers/js/jquery.js",
@@ -162,6 +136,7 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"C:\\xampp\\htdocs\\PetLovers\\Project",
 			"C:\\xampp\\htdocs\\PetLovers"
 		]
 	},
@@ -170,9 +145,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			";\n",
-			"%;\n",
-			"section content",
+			"price",
+			"class=\"price\"",
 			".html",
 			"top"
 		],
@@ -182,6 +156,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"class=\"breed\"",
 			".php"
 		],
 		"reverse": false,
@@ -198,112 +173,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.php",
+					"file": "Project/header.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2551,
+						"buffer_size": 3219,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2337,
-								2337
+								3205,
+								3189
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 751.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "css/main.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12284,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9179,
-								9179
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 6930.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "admin.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3994,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3228,
-								3228
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1576.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "js/ajaxEvents.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1768,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								42,
-								42
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -311,7 +198,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -394,7 +281,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 261.0,
+	"side_bar_width": 208.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

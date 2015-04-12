@@ -1,7 +1,7 @@
 <?php
-    if(isset($_SESSION['name']))
+    if(isset($_SESSION['user']))
     {
-    unset($_SESSION['name']);
+    unset($_SESSION['user']);
     }
     header('location: ../index.php');
 ?>
