@@ -25,9 +25,6 @@ ALTER TABLE Pet
 ADD pet_race_code NUMBER(10);
 
 ALTER TABLE Pet 
-ADD pet_med_code NUMBER(10);
-
-ALTER TABLE Pet 
 ADD pet_cond_code NUMBER(10);
 
 ALTER TABLE Pet 
@@ -35,9 +32,6 @@ ADD pet_size_code NUMBER(10);
 
 ALTER TABLE Pet 
 ADD pet_energy_code NUMBER(10);
-
-ALTER TABLE Pet 
-ADD pet_sickness_code NUMBER(10);
 
 ALTER TABLE Pet 
 ADD pet_learn_code NUMBER(10);
@@ -60,9 +54,6 @@ ALTER TABLE Pet
       ADD CONSTRAINT fk_pet_race_code FOREIGN KEY (pet_race_code) REFERENCES PetRace(pet_race_code);
 
 ALTER TABLE Pet
-      ADD CONSTRAINT fk_pet_med_code FOREIGN KEY (pet_med_code) REFERENCES PetMedicine(pet_med_code);
-
-ALTER TABLE Pet
       ADD CONSTRAINT fk_pet_cond_code FOREIGN KEY (pet_cond_code) REFERENCES PetCondition(pet_cond_code);
 
 ALTER TABLE Pet
@@ -80,7 +71,4 @@ ALTER TABLE Pet
 ALTER TABLE Pet
       ADD CONSTRAINT fk_owner_id FOREIGN KEY (owner_id) REFERENCES Person(Person_id);
 
-ALTER TABLE Pet
-
-	  ADD CONSTRAINT fk_sickness_code FOREIGN KEY (pet_sickness_code) REFERENCES Veterinary(vet_code);
 
