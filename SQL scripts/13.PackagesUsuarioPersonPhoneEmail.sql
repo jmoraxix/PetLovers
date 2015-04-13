@@ -9,6 +9,8 @@ CREATE OR REPLACE PACKAGE usuario_package AS
        PROCEDURE add_user(user_username usuario.username%type, user_password usuario.user_password%type);
        FUNCTION findUsers (u_name usuario.username%type, u_pass usuario.user_password%type)
        RETURN NUMBER;
+	   FUNCTION findAdminUsers (u_name usuario.username%type)
+       RETURN NUMBER;
 END usuario_package; 
   
 CREATE OR REPLACE PACKAGE BODY usuario_package AS 
@@ -29,6 +31,22 @@ CREATE OR REPLACE PACKAGE BODY usuario_package AS
          AND usuario.user_password = u_pass;
          RETURN counter;
        END;
+	   
+	     
+       FUNCTION findAdminUsers (u_name usuario.username%type)
+       RETURN NUMBER 
+       IS 
+         bool_admin NUMBER := 0;
+       BEGIN 
+         SELECT user_type INTO bool_admin 
+         FROM USUARIO 
+         WHERE u_name = username;
+         RETURN bool_admin;
+       EXCEPTION 
+         WHEN NO_DATA_FOUND THEN 
+           RETURN 0;  
+       END;
+	   
 END usuario_package;
         
 
