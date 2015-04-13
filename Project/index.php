@@ -36,14 +36,14 @@
         <div class="properties">
           <div class="image-holder"><img src="images/pets/<?php echo $picture_id; ?>" class="img-responsive" alt="properties"/></div>
           <h4><a href="pet-detail.php"><?php echo $pet_name; ?></a></h4>
-          <p class="breed">Breed: <?php echo $picture_id; ?></p>
+          <p class="text">Breed: <?php echo $picture_id; ?></p>
           <a class="btn btn-primary" href="pet-detail.php">View Details</a>
         </div>
         -->
         <div class="properties">
           <div class="image-holder"><img src="images/properties/3.jpg" class="img-responsive" alt="properties"/></div>
           <h4><a href="pet-detail.php">Royal Inn</a></h4>
-          <p class="breed">Breed: Chiwawa</p>
+          <p class="text">Breed: Chiwawa</p>
           <a class="btn btn-primary" href="pet-detail.php">View Details</a>
         </div>
         
@@ -73,7 +73,7 @@
                   <div class="col-lg-4"><img src="images/properties/1.jpg" class="img-responsive" alt="properties"/></div>
                   <div class="col-lg-8">
                     <h5><a href="property-detail.php">Integer sed porta quam</a></h5>
-                    <p class="breed">$300,000</p>
+                    <p class="text">$300,000</p>
                     <a href="property-detail.php" class="more">More Detail</a>
                   </div>
                 </div>
@@ -83,7 +83,7 @@
                   <div class="col-lg-4"><img src="images/properties/2.jpg" class="img-responsive" alt="properties"/></div>
                   <div class="col-lg-8">
                     <h5><a href="property-detail.php">Integer sed porta quam</a></h5>
-                    <p class="breed">$300,000</p>
+                    <p class="text">$300,000</p>
                     <a href="property-detail.php" class="more">More Detail</a>
                   </div>
                 </div>
@@ -93,7 +93,7 @@
                   <div class="col-lg-4"><img src="images/properties/3.jpg" class="img-responsive" alt="properties"/></div>
                   <div class="col-lg-8">
                     <h5><a href="property-detail.php">Integer sed porta quam</a></h5>
-                    <p class="breed">$300,000</p>
+                    <p class="text">$300,000</p>
                     <a href="property-detail.php" class="more">More Detail</a>
                   </div>
                 </div>
@@ -103,7 +103,7 @@
                   <div class="col-lg-4"><img src="images/properties/4.jpg" class="img-responsive" alt="properties"/></div>
                   <div class="col-lg-8">
                     <h5><a href="property-detail.php">Integer sed porta quam</a></h5>
-                    <p class="breed">$300,000</p>
+                    <p class="text">$300,000</p>
                     <a href="property-detail.php" class="more">More Detail</a>
                   </div>
                 </div>

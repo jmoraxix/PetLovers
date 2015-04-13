@@ -65,8 +65,8 @@ table{background-color: #fff;}
 .listing-detail span:hover{background: #72b70f;}
 
 
-.status.sold{background:rgba(104,167,13,0.8);}
-.status.new{background:rgba(190,7,46,0.8);}
+.status.adopted{background:rgba(104,167,13,0.8);}
+.status.found{background:rgba(190,7,46,0.8);}
 
 .recommended{position: relative;}
 .recommended .carousel-indicators{position: absolute;text-align: left;left: 0;bottom: -40px;margin: 0;}
@@ -95,6 +95,7 @@ table{background-color: #fff;}
 .hot-properties {margin-bottom: 50px;}
 .hot-properties img{width: 68px; height: 68px;}
 .hot-properties h4{margin-bottom: 20px;}
+.hot-properties h5{color:#72b70f; text-decoration:none;outline: none;}
 .hot-properties .row{margin-bottom: 20px;}
 .hot-properties .row p{margin-bottom: 5px;}
 
@@ -103,7 +104,7 @@ table{background-color: #fff;}
 .property-info{margin:0 0 30px 0;}
 .property-info span{margin-right: 5px;}
 .property-info p{margin-bottom:10px; }
-.property-info p.breed{font-size: 28px;color: #72b70f;padding:0;border-radius: 5px;}
+.property-info p.text{font-size: 28px;color: #72b70f;padding:0;border-radius: 5px;}
 .property-info .profile{margin-top: 30px;}
 .property-info .profile p{padding-left: 20px; color: #999;}
 

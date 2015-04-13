@@ -2,8 +2,8 @@
 <!-- banner -->
 <div class="inside-banner">
   <div class="container">
-    <span class="pull-right"><a href="index.php">Home</a> / Register, Consult & Adopt</span>
-    <h2>Register, Consult & Adopt</h2>
+    <span class="pull-right"><a href="index.php">Home</a> / Search for a pet</span>
+    <h2>Search for a pet</h2>
   </div>
 </div>
 <!-- banner -->
@@ -11,7 +11,7 @@
   <div class="properties-listing spacer">
     <div class="row">
       <div class="col-lg-3 col-sm-4 ">
-        <div class="search-form"><h4><span class="glyphicon glyphicon-search"></span> Search for pet</h4>
+        <div class="search-form"><h4><span class="glyphicon glyphicon-search"></span>Search for a pet</h4>
         <input type="text" class="form-control" placeholder="Search by Name">
         <div class="row">
           <div class="col-lg-5">
@@ -46,214 +46,76 @@
         <button class="btn btn-primary">Find Now</button>
       </div>
       <div class="hot-properties hidden-xs">
-        <h4>Recently Added</h4>
+        <h4>Waiting for you</h4>
+        <!-- Basic container for animals in adoption in the pet search page -->
+        <!-- 
+        <div class="row">
+          <div class="col-lg-4 col-sm-5"><img src="images/pets/<?php echo $picture_id; ?>" class="img-responsive img-circle" alt="properties"></div>
+          <div class="col-lg-8 col-sm-7">
+            <h5><a href="pet-detail.php?pet=<?php echo $pet_id; ?>"><?php echo $pet_name; ?></a></h5>
+            <p class="text"><?php echo $pet_breed; ?></p>
+          </div>
+        </div> 
+        -->
         <div class="row">
           <div class="col-lg-4 col-sm-5"><img src="images/properties/9.jpg" class="img-responsive img-circle" alt="properties"></div>
           <div class="col-lg-8 col-sm-7">
-            <h5><a href="property-detail.php">1 day ago</a></h5>
-            <p class="breed">Golden Retriever</p> </div>
+            <h5><a href="pet-detail.php">Ruffo</a></h5>
+            <p class="text">Golden Retriever</p>
           </div>
-          <div class="row">
-            <div class="col-lg-4 col-sm-5"><img src="images/properties/Maltes.jpg" class="img-responsive img-circle" alt="properties"></div>
-            <div class="col-lg-8 col-sm-7">
-              <h5><a href="property-detail.php">2hrs ago</a></h5>
-              <p class="breed">Maltes</p> </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9 col-sm-8">
+      <div class="sortby clearfix">
+        <div class="pull-left result">Showing: </div>
+        <div class="pull-right">
+          <select class="form-control">
+            <option>Sort by</option>
+            <option>Recency: Old to New</option>
+            <option>Recency: New to Old</option>
+            <option>Alphabetical order</option>
+            <option>Reverse alphabetical order</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+       <!-- Basic container for showing animals in the pet search page -->
+       <!--  
+       <div class="col-lg-4 col-sm-6">
+          <div class="properties">
+            <div class="image-holder"><img src="images/pets/<?php echo $picture_id; ?>" class="img-responsive" alt="properties">
+              <div class="status <?php echo $pet_status; ?>"><?php echo $pet_status; ?></div>
             </div>
-            <div class="row">
-              <div class="col-lg-4 col-sm-5"><img src="images/properties/8.jpg" class="img-responsive img-circle" alt="properties"></div>
-              <div class="col-lg-8 col-sm-7">
-                <h5><a href="property-detail.php">2days ago</a></h5>
-                <p class="breed">Husky</p> </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-4 col-sm-5"><img src="images/properties/Mix.jpg" class="img-responsive img-circle" alt="properties"></div>
-                <div class="col-lg-8 col-sm-7">
-                  <h5><a href="property-detail.php">5hrs ago</a></h5>
-                  <p class="breed">Other</p> </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-9 col-sm-8">
-              <div class="sortby clearfix">
-                <div class="pull-left result">Showing: 12 of 100 </div>
-                <div class="pull-right">
-                  <select class="form-control">
-                    <option>Sort by</option>
-                    <option>Recency: Old to New</option>
-                    <option>Recency: New to Old</option>
-                  </select></div>
-                </div>
-                <div class="row">
-                  <!-- properties -->
-                  <div class="col-lg-4 col-sm-6">
-                    <div class="properties">
-                      <div class="image-holder"><img src="images/properties/POODLE.jpg" class="img-responsive" alt="properties">
-                        <div class="status sold">Adopted</div>
-                      </div>
-                      <h4><a href="property-detail.php">Size: large</a></h4>
-                      <p class="breed">Breed: Poodle</p>
-                      <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                      <a class="btn btn-primary" href="property-detail.php">View Details</a>
-                    </div>
-                  </div>
-                  <!-- properties -->
-                  <!-- properties -->
-                  <div class="col-lg-4 col-sm-6">
-                    <div class="properties">
-                      <div class="image-holder"><img src="images/properties/Mix.jpg" class="img-responsive" alt="properties">
-                        <div class="status sold">Found</div>
-                      </div>
-                      <h4><a href="property-detail.php">Size: medium</h4>
-                        <p class="breed">Breed:Other </p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-                      </div>
-                    </div>
-                    <!-- properties -->
-                    <!-- properties -->
-                    <div class="col-lg-4 col-sm-6">
-                      <div class="properties">
-                        <div class="image-holder"><img src="images/properties/Yorkie.jpg" class="img-responsive" alt="properties">
-                          <div class="status sold">Found</div>
-                        </div>
-                        <h4><a href="property-detail.php">Size: Small</a></h4>
-                        <p class="breed">Breed: Yorkie Terrior</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-                      </div>
-                    </div>
-                    <!-- properties -->
-                    <!-- properties -->
-                    <div class="col-lg-4 col-sm-6">
-                      <div class="properties">
-                        <div class="image-holder"><img src="images/properties/12.jpg" class="img-responsive" alt="properties">
-                          <div class="status sold">Adopted</div>
-                        </div>
-                        <h4><a href="property-detail.php">Size: Small</a></h4>
-                        <p class="breed">Breed: Chiwawa</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-                      </div>
-                    </div>
-                    <!-- properties -->
-                    <!-- properties -->
-                    <div class="col-lg-4 col-sm-6">
-                      <div class="properties">
-                        <div class="image-holder"><img src="images/properties/Spaniel.jpg" class="img-responsive" alt="properties">
-                          <div class="status sold">Adopted</div>
-                        </div>
-                        <h4><a href="property-detail.php">Size: Medium</a></h4>
-                        <p class="breed">Breed: American Water Spaniel</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-                      </div>
-                    </div>
-                    <!-- properties -->
-                    <!-- properties -->
-                    <div class="col-lg-4 col-sm-6">
-                      <div class="properties">
-                        <div class="image-holder"><img src="images/properties/13.jpg" class="img-responsive" alt="properties">
-                          <div class="status sold">Found</div>
-                        </div>
-                        <h4><a href="property-detail.php">Size: Medium</a></h4>
-                        <p class="breed">Breed: Australian Shepherd</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-                      </div>
-                    </div>
-                    <!-- properties -->
-                    <!-- properties -->
-                    <div class="col-lg-4 col-sm-6">
-                      <div class="properties">
-                        <div class="image-holder"><img src="images/properties/10.jpg" class="img-responsive" alt="properties">
-                          <div class="status sold">Found</div>
-                        </div>
-                        <h4><a href="property-detail.php">Size: Large</a></h4>
-                        <p class="breed">Breed: Labrador</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-                      </div>
-                    </div>
-                    <!-- properties -->
-                    <!-- properties -->
-                    <div class="col-lg-4 col-sm-6">
-                      <div class="properties">
-                        <div class="image-holder"><img src="images/properties/7.jpg" class="img-responsive" alt="properties">
-                          <div class="status sold">Adopted</div>
-                        </div>
-                        <h4><a href="property-detail.php">Size: Small</a></h4>
-                        <p class="breed">Breed: Chiwawa</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-                      </div>
-                    </div>
-                    <!-- properties -->
-                    <!-- properties -->
-                    <div class="col-lg-4 col-sm-6">
-                      <div class="properties">
-                        <div class="image-holder"><img src="images/properties/POODLE.jpg" class="img-responsive" alt="properties">
-                          <div class="status sold">Adopted</div>
-                        </div>
-                        <h4><a href="property-detail.php">Size: Medium</a></h4>
-                        <p class="breed">Breed: Poodle</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-                      </div>
-                    </div>
-                    <!-- properties -->
-                    <!-- properties -->
-                    <div class="col-lg-4 col-sm-6">
-                      <div class="properties">
-                        <div class="image-holder"><img src="images/properties/1.jpg" class="img-responsive" alt="properties">
-                          <div class="status sold">Found</div>
-                        </div>
-                        <h4><a href="property-detail.php">Size: Large</a></h4>
-                        <p class="breed">Breed: Golden Retriever</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-                      </div>
-                    </div>
-                    <!-- properties -->
-                    <!-- properties -->
-                    <div class="col-lg-4 col-sm-6">
-                      <div class="properties">
-                        <div class="image-holder"><img src="images/properties/Mix.jpg" class="img-responsive" alt="properties">
-                          <div class="status sold">Adopted</div>
-                        </div>
-                        <h4><a href="property-detail.php">Size: Medium</a></h4>
-                        <p class="breed">Breed: Other</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-                      </div>
-                    </div>
-                    <!-- properties -->
-                    <!-- properties -->
-                    <div class="col-lg-4 col-sm-6">
-                      <div class="properties">
-                        <div class="image-holder"><img src="images/properties/Mix.jpg" class="img-responsive" alt="properties">
-                          <div class="status sold">Found</div>
-                        </div>
-                        <h4><a href="property-detail.php">Size: Medium</a></h4>
-                        <p class="breed">Breed: Bulldog</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-                        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-                      </div>
-                    </div>
-                    <!-- properties -->
-                    <div class="center">
-                      <ul class="pagination">
-                        <li><a href="#">«</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">»</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h4><a href="pet-detail.php?pet=<?php echo $pet_id; ?>">Size: <?php echo $pet_size; ?></a></h4>
+            <p class="text">Breed: <?php echo $pet_breed; ?></p>
+            <a class="btn btn-primary" href="pet-detail.php?pet=<?php echo $pet_id; ?>">View Details</a>
           </div>
-          <?php include'footer.php';?>
+        </div> 
+        -->
+        <!-- properties -->
+        <div class="col-lg-4 col-sm-6">
+          <div class="properties">
+            <div class="image-holder"><img src="images/properties/POODLE.jpg" class="img-responsive" alt="properties">
+              <div class="status found">Adopted</div>
+            </div>
+            <h4><a href="pet-detail.php">Size: large</a></h4>
+            <p class="text">Breed: Poodle</p>
+            <a class="btn btn-primary" href="pet-detail.php">View Details</a>
+          </div>
+        </div>
+        <!-- properties -->
+        
+        <div class="center">
+          <ul class="pagination">
+            <li><a href="#">«</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">»</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<?php include'footer.php';?>
