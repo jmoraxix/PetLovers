@@ -48,11 +48,6 @@ ADD vet_code NUMBER(10);
 ALTER TABLE Pet
 ADD owner_id NUMBER(10);
 
-ALTER TABLE Pet
-ADD adopted NUMBER(10);
-
-ALTER TABLE Pet
-ADD returned NUMBER(10);
 
 
 /*
@@ -89,10 +84,3 @@ ALTER TABLE Pet
 
 	  ADD CONSTRAINT fk_sickness_code FOREIGN KEY (pet_sickness_code) REFERENCES Veterinary(vet_code);
 
-ALTER TABLE Pet
-
-	  ADD CONSTRAINT fk_adoption_code FOREIGN KEY (adopted)	  REFERENCES PetAdoption(adoption_code);
-
-ALTER TABLE Pet
-
-	  ADD CONSTRAINT fk_return_code FOREIGN KEY (returned) REFERENCES PetReturn(return_code);
