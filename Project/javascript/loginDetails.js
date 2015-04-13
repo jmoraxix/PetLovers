@@ -42,7 +42,22 @@ function sendUserDetails(){
 		  if (xmlhttp.readyState==4 && xmlhttp.status==200){
 				serverResponse = xmlhttp.responseText
 				console.log(serverResponse);
-				var code = parseInt(serverResponse);	
+				var code = parseInt(serverResponse);
+				console.log(code);
+				if(code == 2){
+					alert("Admin login succesful.")
+					username.value = "";
+					window.location = "register.php";
+				} else if(code == 1) {
+					alert("Login succesful.");
+					username.value = "";
+					window.location = "register.php";
+				} else {
+					alert("The username or password that you have entered is invalid or it doesn't exist. Please try again, or create an account.");
+					username.value = "";
+					password.value = "";
+					return false;
+				}
 		  }
 	  }
 	 

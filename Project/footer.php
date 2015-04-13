@@ -1,3 +1,4 @@
+<script src="javascript/loginDetails.js"></script>
 <div class="footer">
   <div class="container">
     <div class="row">
@@ -37,18 +38,18 @@
               <form class="" role="form">
                 <div class="form-group">
                   <label class="sr-only" for="inputUsername">Username</label>
-                  <input type="text" class="form-control" id="inputUsername" placeholder="Enter username">
+                  <input id="login_username" type="text" class="form-control" id="inputUsername" placeholder="Enter username">
                 </div>
                 <div class="form-group">
                   <label class="sr-only" for="inputPassword">Password</label>
-                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                  <input id="login_password" type="password" class="form-control" id="inputPassword" placeholder="Password">
                 </div>
                 <div class="checkbox">
                   <label>
                     <input type="checkbox"> Remember me
                   </label>
                 </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
+                <button id="start_session" type="button" class="btn btn-success">Sign in</button>
               </form>
             </div>
           </div>
