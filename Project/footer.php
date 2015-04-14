@@ -1,4 +1,4 @@
-<script src="javascript/loginDetails.js"></script>
+
 <div class="footer">
   <div class="container">
     <div class="row">

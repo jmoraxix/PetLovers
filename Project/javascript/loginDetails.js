@@ -2,9 +2,6 @@
 the button used to submit a user's details. AFter that, said information is sent to an 
 external php file which is used to check if a user exists and start a session*/
 
-
-
-
 window.onload = function findLoginButton() {
     var button = document.getElementById("start_session").addEventListener("click", sendUserDetails);                      /*Unobtrusive javascript listener, added to */																									/*create account button in html*/
 }
@@ -13,6 +10,9 @@ function sendUserDetails(){
 	var xmlhttp;
 	var username;
 	var password;
+	var joinButton;
+	var loginButton;
+	var logoutButton;
 	var dataToSend = [];
 	var JSONdataToSend;
 	
@@ -26,8 +26,14 @@ function sendUserDetails(){
 	  return false;
   }
   
+  loginButton = document.getElementById("login");
+  joinButton = document.getElementById("join");
+  logoutButton = document.getElementById("logout");
   username = document.getElementById("login_username");
   password = document.getElementById("login_password");
+  
+  console.log(loginButton);
+  console.log(joinButton);
   if (username.value == ""  || password.value == "" ){
 	  alert("Please, fill out all fields before submitting");
 	  return false;
@@ -47,10 +53,16 @@ function sendUserDetails(){
 				if(code == 2){
 					alert("Admin login succesful.")
 					username.value = "";
+					loginButton.style.display = "none";
+					joinButton.style.display = "none";
+					logoutButton.style.display = "block";
 					window.location = "register.php";
 				} else if(code == 1) {
-					alert("Login succesful.");
 					username.value = "";
+					loginButton.style.display = "none";
+					joinButton.style.display = "none";
+					logoutButton.style.display = "block";
+					alert("Login succesful.");
 					window.location = "register.php";
 				} else {
 					alert("The username or password that you have entered is invalid or it doesn't exist. Please try again, or create an account.");
