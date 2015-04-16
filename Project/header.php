@@ -9,9 +9,9 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <script src="assets/script.js"></script>
-	<script src="javascript/loginDetails.js"></script>
+    <script src="javascript/loginDetails.js"></script>
     
-	<!-- Owl stylesheet -->
+    <!-- Owl stylesheet -->
     <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
     <script src="assets/owl-carousel/owl.carousel.js"></script>
@@ -70,7 +70,7 @@
           <ul class="pull-right">
             <li><button id="login" class="btn btn-info" data-toggle="modal" data-target="#loginpop">Login</button></li> <!-- Actual login is in footer.php -->
             <li><button id="join" type="button" class="btn btn-info"  onclick="window.location.href='register.php'">Join Now</button></li>
-			<li><button id="logout" type="button" class="btn btn-info" style="display: none">Logout</button>
+            <li><button id="logout" type="button" class="btn btn-info" style="display: none">Logout</button></li>
           </ul>
         </form>
       </div>
