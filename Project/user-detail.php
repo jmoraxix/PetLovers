@@ -88,13 +88,32 @@
             </div>
             
             <div class="spacer"><h4><span class="glyphicon glyphicon-star"></span>Username</h4>
-            <p></p>
+            <p>Nombre completo</p>
           </div>
           <div class="spacer"><h4><span class="glyphicon glyphicon-asterisk"></span>Contact Details</h4>
-          <p></p>
+          <p>Correo</p>
         </div>
         <div class="spacer"><h4><span class="glyphicon glyphicon-th"></span>Rate User</h4>
-        <p></p>
+        <p>Lista negra</p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="col-lg-12  col-sm-6">
+        <div class="property-info">
+          <p class="area"><span class="glyphicon glyphicon-map-marker"></span> Costa Rica, San José</p>
+          <div class="profile">
+            <span class="glyphicon glyphicon-user"></span> Estado civil del usuario.
+            <p>Soltero</p>
+          </div>
+          <div class="profile">
+            <span class="glyphicon glyphicon-home"></span> Disponibilidad de campo.
+            <p>Abierto</p>
+          </div>
+          <div class="profile">
+            <span class="glyphicon glyphicon-home"></span> Calidad de cuidador
+            <p>Excelente</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
