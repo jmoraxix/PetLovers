@@ -43,7 +43,8 @@
         </div>
         <div class="row">
           <div class="col-lg-12 col-sm-12">
-            <div class="properties">
+            <div class="properties" style=" padding-top: 20px; padding-bottom: 50px;
+                                            padding-left: 20px; padding-right: 20px;">>
               <div class="col-lg-8">
                 <p class="text">Red</p>
               </div>
