@@ -1,9 +1,9 @@
-<?php include'header.php';?>
+<?php include'userHeader.php';?>
 <!-- banner -->
 <div class="inside-banner">
   <div class="container">
-    <span class="pull-right"><a href="#">Home</a> / Pet profile</span>
-    <h2>Pet profile</h2>
+    <span class="pull-right"><a href="userIndex.php">Home</a> / User Profile</span>
+    <h2>User Profile</h2>
   </div>
 </div>
 <!-- banner -->
@@ -12,39 +12,39 @@
     <div class="row">
       <div class="col-lg-3 col-sm-4 hidden-xs">
         <div class="hot-properties hidden-xs">
-          <h4>Pet info</h4>
+          <h4>Adoptions</h4>
           <div class="row">
             <div class="col-lg-4 col-sm-5"><img src="images/properties/4.jpg" class="img-responsive img-circle" alt="properties"/></div>
             <div class="col-lg-8 col-sm-7">
-              <h5>Dog</h5>
-              <p class="text">Pet</p>
+              <h5></h5>
+              <p class="text"></p>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-4 col-sm-5"><img src="images/properties/1.jpg" class="img-responsive img-circle" alt="properties"/></div>
             <div class="col-lg-8 col-sm-7">
-              <h5>Chiwawa</h5>
-              <p class="text">Breed</p>
+              <h5></h5>
+              <p class="text"></p>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-4 col-sm-5"><img src="images/properties/3.jpg" class="img-responsive img-circle" alt="properties"/></div>
             <div class="col-lg-8 col-sm-7">
-              <h5>Cup</h5>
-              <p class="text">Size</p>
+              <h5></h5>
+              <p class="text"></p>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-4 col-sm-5"><img src="images/properties/2.jpg" class="img-responsive img-circle" alt="properties"/></div>
             <div class="col-lg-8 col-sm-7">
-              <h5>Couch potato</h5>
-              <p class="text">Energy</p>
+              <h5></h5>
+              <p class="text"></p>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-9 col-sm-8 ">
-        <h2>Pet name</h2>
+        <h2>User Details</h2>
         <div class="row">
           <div class="col-lg-8">
             <div class="property-images">
@@ -87,42 +87,14 @@
               <!-- #Slider Ends -->
             </div>
             
-            <div class="spacer"><h4><span class="glyphicon glyphicon-star"></span>Pet situation</h4>
-            <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+            <div class="spacer"><h4><span class="glyphicon glyphicon-star"></span>Username</h4>
+            <p></p>
           </div>
-          <div class="spacer"><h4><span class="glyphicon glyphicon-asterisk"></span>Illnesses</h4>
-          <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+          <div class="spacer"><h4><span class="glyphicon glyphicon-asterisk"></span>Contact Details</h4>
+          <p></p>
         </div>
-        <div class="spacer"><h4><span class="glyphicon glyphicon-th"></span>Current medications</h4>
-        <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="col-lg-12  col-sm-6">
-        <div class="property-info">
-          <p class="text">$ 200,000,000</p>
-          <p class="area"><span class="glyphicon glyphicon-map-marker"></span> 344 Villa, Syndey, Australia</p>
-          <div class="profile">
-            <span class="glyphicon glyphicon-user"></span> Current Owner Details
-            <p>John Parker</p>
-          </div>
-          <div class="profile">
-            <span class="glyphicon glyphicon-home"></span> Availabilty
-            <p>Adopted</p>
-          </div>
-        </div>
-        <div class="col-lg-12 col-sm-6 ">
-          <div class="enquiry">
-            <h6><span class="glyphicon glyphicon-envelope"></span>Contact current owner</h6>
-            <form role="form">
-              <input type="text" class="form-control" placeholder="Full Name"/>
-              <input type="text" class="form-control" placeholder="you@yourdomain.com"/>
-              <input type="text" class="form-control" placeholder="your number"/>
-              <textarea rows="6" class="form-control" placeholder="Whats on your mind?"></textarea>
-              <button type="submit" class="btn btn-primary" name="Submit">Send Message</button>
-            </form>
-          </div>
-        </div>
+        <div class="spacer"><h4><span class="glyphicon glyphicon-th"></span>Rate User</h4>
+        <p></p>
       </div>
     </div>
   </div>

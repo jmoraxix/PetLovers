@@ -9,9 +9,9 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <script src="assets/script.js"></script>
-    <script src="javascript/loginDetails.js"></script>
+	<script src="javascript/loginDetails.js"></script>
     
-    <!-- Owl stylesheet -->
+	<!-- Owl stylesheet -->
     <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
     <script src="assets/owl-carousel/owl.carousel.js"></script>
@@ -41,8 +41,6 @@
           <div class="navbar-collapse  collapse">
             <ul class="nav navbar-nav navbar-right">
               <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/index.php') { ?> class="active" <?php }; ?>><a href="index.php">Home</a></li>
-              <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/search-pets.php') { ?> class="active" <?php }; ?>><a href="search-pets.php">Find a pet</a></li>
-              <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/search-users.php') { ?> class="active" <?php }; ?>><a href="search-users.php">Find a user</a></li>
               <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/contact.php') { ?> class="active" <?php }; ?>><a href="contact.php">Contact an admin</a></li>
               <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/about.php') { ?> class="active" <?php }; ?>><a href="about.php">About</a></li>
             </ul>
@@ -70,7 +68,7 @@
           <ul class="pull-right">
             <li><button id="login" class="btn btn-info" data-toggle="modal" data-target="#loginpop">Login</button></li> <!-- Actual login is in footer.php -->
             <li><button id="join" type="button" class="btn btn-info"  onclick="window.location.href='register.php'">Join Now</button></li>
-            <li><button id="logout" type="button" class="btn btn-info" style="display: none">Logout</button></li>
+			<li><button id="logout" type="button" class="btn btn-info" style="display: none">Logout</button>
           </ul>
         </form>
       </div>

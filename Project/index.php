@@ -18,13 +18,6 @@
         </div>
       </div>
       </div><!-- /sl-slider -->
-      <nav id="nav-dots" class="nav-dots">
-        <span class="nav-dot-current"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </nav>
       </div><!-- /slider-wrapper -->
     </div>
     <div class="container">
