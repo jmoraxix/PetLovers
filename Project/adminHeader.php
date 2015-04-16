@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <?php session_start(); ?>
+   <?php session_start(); ?>
     <title>PetLovers</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -10,8 +10,8 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <script src="assets/script.js"></script>
-	<script src="javascript/logout.js"</script>
-    
+	<script src="javascript/logout.js"></script>
+	
 	<!-- Owl stylesheet -->
     <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
@@ -41,11 +41,12 @@
           <!-- Nav Starts -->
           <div class="navbar-collapse  collapse">
             <ul class="nav navbar-nav navbar-right">
-			  <?php session_start(); ?>
-			  <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/index.php') { ?> class="active" <?php }; ?>><a href="adminAccessPage.php"><?PHP echo $_SESSION['name']?></a></li>
-              <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/index.php') { ?> class="active" <?php }; ?>><a href="adminIndex.php">Home</a></li>
+			  <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/index.php') { ?> class="active" <?php }; ?>><a href="adminAccessPage.php"><?php echo $_SESSION['name']?></a></li>
+              <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/index.php') { ?> class="active" <?php }; ?>><a href="userIndex.php">Home</a></li>
 			  <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/search-pets.php') { ?> class="active" <?php }; ?>><a href="search-pets.php">Find a pet</a></li>
               <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/search-users.php') { ?> class="active" <?php }; ?>><a href="search-users.php">Find a user</a></li>
+              <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/contact.php') { ?> class="active" <?php }; ?>><a href="contact.php">Contact an admin</a></li>
+              <li <?php if(curPageURL() == 'http://localhost/PetLovers/Project/about.php') { ?> class="active" <?php }; ?>><a href="about.php">About</a></li>
             </ul>
           </div>
           <!-- #Nav Ends -->

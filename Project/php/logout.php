@@ -1,7 +1,11 @@
 <?php
-    if(isset($_SESSION['user']))
-    {
-    unset($_SESSION['user']);
-    }
-    header('location: ../index.php');
+  /* this logs out the user */
+  session_start();
+  if(isset($_SESSION['name']) && isset($_SESSION['usertype'])){
+	unset($_SESSION['name']);
+	unset($_SESSION['usertype']);
+	exit('1');
+  } else {
+		exit ('0');
+  }
 ?>

@@ -56,14 +56,14 @@ function sendUserDetails(){
 					loginButton.style.display = "none";
 					joinButton.style.display = "none";
 					logoutButton.style.display = "block";
-					window.location = "register.php";
+					window.location = "adminIndex.php";
 				} else if(code == 1) {
 					username.value = "";
 					loginButton.style.display = "none";
 					joinButton.style.display = "none";
 					logoutButton.style.display = "block";
 					alert("Login succesful.");
-					window.location = "register.php";
+					window.location = "userIndex.php";
 				} else {
 					alert("The username or password that you have entered is invalid or it doesn't exist. Please try again, or create an account.");
 					username.value = "";
