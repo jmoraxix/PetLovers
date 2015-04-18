@@ -26,7 +26,6 @@
         <input id="register" type="text" class="form-control" placeholder="First Name" name="form_name" maxlength="20">
         <input id="register" type="text" class="form-control" placeholder="First Last Name" name="form_name" maxlength="16">
         <input id="register" type="text" class="form-control" placeholder="Second Last Name" name="form_name" maxlength="16">
-        <input id="register" type="text" class="form-control" placeholder="Identification" name="form_name" maxlength="20">
         <input id="register" type="text" class="form-control" placeholder="Enter Email" name="form_email" maxlength="30">
         <input id="register" type="text" class="form-control" placeholder="Enter Phone Number" name="form_email" maxlength="8">
         
