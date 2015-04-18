@@ -104,7 +104,7 @@
     <div class="modal-content">
       <div class="row">
         <div class="col-sm-6">
-          <h4>Phone numbers of [USER]</h4>
+          <h4>Phone numbers of <?php echo $_SESSION['name']?></h4>
           <input id="user_phone" type="text" class="form-control" placeholder="Phone 1" name="form_name" maxlength="20" value="">
           <input id="user_phone" type="text" class="form-control" placeholder="Phone 2" name="form_name" maxlength="20" value="">
           <input id="user_phone" type="text" class="form-control" placeholder="Phone 3" name="form_name" maxlength="20" value="">
@@ -131,7 +131,7 @@
     <div class="modal-content">
       <div class="row">
         <div class="col-sm-6">
-          <h4>Emails of [USER]</h4>
+          <h4>Emails of <?php echo $_SESSION['name']?></h4>
           <input id="user_email" type="text" class="form-control" placeholder="Email 1" name="form_name" maxlength="20" value="">
           <input id="user_email" type="text" class="form-control" placeholder="Email 2" name="form_name" maxlength="20" value="">
           <input id="user_email" type="text" class="form-control" placeholder="Email 3" name="form_name" maxlength="20" value="">
