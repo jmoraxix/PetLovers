@@ -47,7 +47,6 @@ function sendUserDetails(){
 					window.location = "index.php";
 				} else if(code == 1) {
 					alert("Login succesful.");
-					window.location = "index.php";
 				} else {
 					alert("The username or password that you have entered is invalid or it doesn't exist. Please try again, or create an account.");
 					username.value = "";
