@@ -1,4 +1,4 @@
-<?php include'adminHeader.php';?>
+<?php include'header.php';?>
 <!-- banner -->
 <div class="inside-banner">
   <div class="container">
@@ -18,9 +18,17 @@
               <select class="form-control">
                 <option>Category</option>
                 <option>Color</option>
-                <option>Cat</option>
-                <option>Bird</option>
-                <option>Horse</option>
+                <option>Disease</option>
+                <option>Health Condition</option>
+                <option>Pet Type</option>
+                <option>Pet breed</option>
+                <option>Training level</option>
+                <option>Energy level</option>
+                <option>Size</option>
+                <option>Condition</option>
+                <option>Medication</option>
+                <option>Parameter</option>
+                <option>Email message</option>
               </select>
             </div>
             <button class="btn btn-primary">Create</button>
@@ -44,7 +52,7 @@
         <div class="row">
           <div class="col-lg-12 col-sm-12">
             <div class="properties" style=" padding-top: 20px; padding-bottom: 50px;
-                                            padding-left: 20px; padding-right: 20px;">>
+                                            padding-left: 20px; padding-right: 20px;">
               <div class="col-lg-8">
                 <p class="text">Red</p>
               </div>

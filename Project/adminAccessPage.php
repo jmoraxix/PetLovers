@@ -1,4 +1,4 @@
-<?php include'adminHeader.php';?>
+<?php include'header.php';?>
 <!-- banner -->
 <div class="inside-banner">
   <div class="container">
