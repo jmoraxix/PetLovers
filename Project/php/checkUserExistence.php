@@ -32,12 +32,12 @@
 	$result = (int)$result;
 	$result_admin = (int)$result_admin;
 
-	if(true){//$result == 1 && $result_admin == 1){
+	if($result == 1 && $result_admin == 1){
 		session_start();
 		$_SESSION['name'] = $username;
 		$_SESSION['usertype'] = 1;
 		exit ('2');
-	}else if (true){//$result == 1 && $result_admin == 0) {
+	}else if ($result == 1 && $result_admin == 0) {
 		session_start();
 		$_SESSION['name'] = $username;
 		$_SESSION['usertype'] = 0;
