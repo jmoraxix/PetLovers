@@ -95,7 +95,7 @@ PROCEDURE SET_CONDITION
 	(name in VARCHAR2);
 
 PROCEDURE SET_VET 
-	(name in VARCHAR2, telefone in VARCHAR2); 
+	(name in VARCHAR2, telephone in VARCHAR2); 
 
 PROCEDURE SET_SIZE 
 	(name in VARCHAR2);
@@ -110,7 +110,7 @@ PROCEDURE SET_Type
 	(name in VARCHAR2);
 
 PROCEDURE SET_BREED 
-	(name in VARCHAR2); 
+	(name in VARCHAR2, type in VARCHAR2); 
 
 PROCEDURE SET_ENERGY 
 	(name in VARCHAR2);
@@ -125,7 +125,7 @@ END setting_package;
 CREATE OR REPLACE PACKAGE BODY setting_package AS   
 
 PROCEDURE SET_MEDICINE 
-	(name in VARCHAR2) 
+	(name in VARCHAR2) IS
 
 		BEGIN 
 			INSERT INTO PETMEDICINE(pet_med_name, pet_med_code) 
@@ -135,7 +135,7 @@ PROCEDURE SET_MEDICINE
 END SET_MEDICINE;
 
 PROCEDURE SET_CONDITION 
-	(name in VARCHAR2)  
+	(name in VARCHAR2) IS
 
 	 	BEGIN 
 			INSERT INTO PETCONDITION(PET_COND_NAME, PET_COND_CODE)
@@ -145,7 +145,7 @@ PROCEDURE SET_CONDITION
 END SET_CONDITION; 
 
 PROCEDURE SET_VET 
-	(name in VARCHAR2, telefone in VARCHAR2)  
+	(name in VARCHAR2, telephone in VARCHAR2) IS
 
 		BEGIN 
 			INSERT INTO VETERINARY(Vet_Name, Vet_Code, Vet_Phone_Number)
@@ -156,7 +156,7 @@ END SET_VET;
 
 
 PROCEDURE SET_SIZE 
-	(name in VARCHAR2)  
+	(name in VARCHAR2)  IS
 		BEGIN 
 			INSERT INTO PETSIZE(PET_SIZE, PET_SIZE_CODE) 
 				VALUES(name, size_id_generator.nextval); 
@@ -165,7 +165,7 @@ PROCEDURE SET_SIZE
 END SET_SIZE;
 
 PROCEDURE SET_LEARNING_SKILL 
-	(name in VARCHAR2)  
+	(name in VARCHAR2)  IS
 		BEGIN 
 			INSERT INTO Petlearningskill(Pet_Learn_Skill, Pet_Learn_Code) 
 				VALUES(NAME, LS_id_generator.nextval); 
@@ -176,7 +176,7 @@ END SET_LEARNING_SKILL;
 
 
 PROCEDURE SET_COLOR 
-	(name in VARCHAR2)   
+	(name in VARCHAR2) IS  
 		BEGIN 
 			INSERT INTO Petcolor(Pet_Color, Pet_Color_Code) 
 				VALUES(name, Color_id_generator.nextval); 
@@ -186,7 +186,7 @@ END SET_COLOR;
 
 
 PROCEDURE SET_Type 
-	(name in VARCHAR2)  
+	(name in VARCHAR2) IS 
 		BEGIN 
 			INSERT INTO Pettype(Pet_Type_Name, Pet_Type_Code) 
 				values(name, Type_id_generator.nextval); 
@@ -197,7 +197,7 @@ END SET_Type;
 
 
 PROCEDURE SET_BREED 
-	(name in VARCHAR2, type in VARCHAR2)  
+	(name in VARCHAR2, type in VARCHAR2) IS
 
   type_id NUMBER;
 
@@ -214,7 +214,7 @@ PROCEDURE SET_BREED
 END SET_BREED;
 
 PROCEDURE SET_ENERGY 
-	(name in VARCHAR2)  
+	(name in VARCHAR2)  IS
 		BEGIN 
 			INSERT INTO PetEnergy(Pet_Energy_Level, Pet_Energy_Code)
 				VALUES(name, Energy_id_generator.nextval); 
@@ -224,7 +224,7 @@ PROCEDURE SET_ENERGY
 END SET_ENERGY; 
 
 PROCEDURE SET_Sickness 
-	(name in VARCHAR2, desciption in VARCHAR2) 
+	(name in VARCHAR2, desciption in VARCHAR2) IS
 		BEGIN 
 			INSERT INTO Petsickness(Pet_Sickness_Name, Pet_Sickness_Description, Pet_Sickness_Code) 
 				VALUES(name, desciption, Sickness_id_generator.nextval); 
