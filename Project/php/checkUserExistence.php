@@ -2,7 +2,7 @@
 /* This file makes calls the appropriate queries in the database to validate if the user exists or not,
 *based on those results it will return a 0 for false or a 1 for true, which is then handled by javascript*/
 
-	db_connection = oci_connect('DBadmin', 'dbadmin', 'localhost/petloversdbXDB');
+	$db_connection = oci_connect('DBadmin', 'dbadmin', 'localhost/petloversdbXDB');
 	$result;
 	$result_admin;
 	$dataToReceive = file_get_contents('php://input');
