@@ -80,8 +80,8 @@ table{background-color: #fff;}
 .recommended p{margin: 5px 0 10px 0;}
 
 
-.modal-content{padding: 20px;}
-.login .form-group input{padding: 10px; height: 50px;}
+.modal-content{padding: 20px; margin: auto;}
+.login .form-group input{padding: 10px;}
 
 .register input{padding: 10px; height: 50px;}
 .contact input{padding: 10px; height: 50px;}

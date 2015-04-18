@@ -10,13 +10,10 @@ function sendUserDetails(){
 	var xmlhttp;
 	var username;
 	var password;
-	var joinButton;
-	var loginButton;
-	var logoutButton;
 	var dataToSend = [];
 	var JSONdataToSend;
-	
-	
+
+
   if (window.XMLHttpRequest){
 	  xmlhttp = new XMLHttpRequest();        /* Used for IE7+,FireFox, Opera, Chrome, Safari */
   } else if (window.ActiveXObject) {
@@ -25,24 +22,19 @@ function sendUserDetails(){
 	  throw new Error("Your browser is not compatible with XMLHTTP");
 	  return false;
   }
-  
-  loginButton = document.getElementById("login");
-  joinButton = document.getElementById("join");
-  logoutButton = document.getElementById("logout");
+
   username = document.getElementById("login_username");
   password = document.getElementById("login_password");
-  
-  console.log(loginButton);
-  console.log(joinButton);
+
   if (username.value == ""  || password.value == "" ){
 	  alert("Please, fill out all fields before submitting");
 	  return false;
   }
-  
+
   dataToSend[0] = username.value;
   dataToSend[1] = password.value;
   JSONdataToSend = JSON.stringify({dataToSend: dataToSend});
-  
+
   xmlhttp.onreadystatechange=function()
 	  {
 		  if (xmlhttp.readyState==4 && xmlhttp.status==200){
@@ -52,18 +44,10 @@ function sendUserDetails(){
 				console.log(code);
 				if(code == 2){
 					alert("Admin login succesful.")
-					username.value = "";
-					loginButton.style.display = "none";
-					joinButton.style.display = "none";
-					logoutButton.style.display = "block";
-					window.location = "adminIndex.php";
+					window.location = "index.php";
 				} else if(code == 1) {
-					username.value = "";
-					loginButton.style.display = "none";
-					joinButton.style.display = "none";
-					logoutButton.style.display = "block";
 					alert("Login succesful.");
-					window.location = "userIndex.php";
+					window.location = "index.php";
 				} else {
 					alert("The username or password that you have entered is invalid or it doesn't exist. Please try again, or create an account.");
 					username.value = "";
@@ -72,7 +56,7 @@ function sendUserDetails(){
 				}
 		  }
 	  }
-	 
+
 	xmlhttp.open("POST","php/checkUserExistence.php", true);
 	xmlhttp.setRequestHeader("Content-type","application/json;charset=UTF-8");
 	xmlhttp.send(JSONdataToSend);
