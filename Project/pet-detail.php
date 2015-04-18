@@ -16,29 +16,29 @@
           <div class="row">
             <div class="col-lg-4 col-sm-5"><img src="images/properties/4.jpg" class="img-responsive img-circle" alt="properties"/></div>
             <div class="col-lg-8 col-sm-7">
-              <h5>Dog</h5>
-              <p class="text">Pet</p>
+              <h5>Pet</h5>
+              <p class="text">Dog</p>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-4 col-sm-5"><img src="images/properties/1.jpg" class="img-responsive img-circle" alt="properties"/></div>
             <div class="col-lg-8 col-sm-7">
-              <h5>Chiwawa</h5>
-              <p class="text">Breed</p>
+              <h5>Breed</h5>
+              <p class="text">Chiwawa</p>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-4 col-sm-5"><img src="images/properties/3.jpg" class="img-responsive img-circle" alt="properties"/></div>
             <div class="col-lg-8 col-sm-7">
-              <h5>Cup</h5>
-              <p class="text">Size</p>
+              <h5>Size</h5>
+              <p class="text">Cup</p>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-4 col-sm-5"><img src="images/properties/2.jpg" class="img-responsive img-circle" alt="properties"/></div>
             <div class="col-lg-8 col-sm-7">
-              <h5>Couch potato</h5>
-              <p class="text">Energy</p>
+              <h5>Energy</h5>
+              <p class="text">Couch potato</p>
             </div>
           </div>
         </div>
@@ -65,18 +65,18 @@
                   <!-- #Item 1 -->
                   <!-- Item 2 -->
                   <div class="item">
-                    <img src="images/properties/2.jpg" class="properties" alt="properties" />
+                    <img src="images/properties/6.jpg" class="properties" alt="properties" />
                     
                   </div>
                   <!-- #Item 2 -->
                   <!-- Item 3 -->
                   <div class="item">
-                    <img src="images/properties/1.jpg" class="properties" alt="properties" />
+                    <img src="images/properties/7.jpg" class="properties" alt="properties" />
                   </div>
                   <!-- #Item 3 -->
                   <!-- Item 4 -->
                   <div class="item ">
-                    <img src="images/properties/3.jpg" class="properties" alt="properties" />
+                    <img src="images/properties/8.jpg" class="properties" alt="properties" />
                     
                   </div>
                   <!-- # Item 4 -->

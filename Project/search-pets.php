@@ -16,30 +16,35 @@
         <div class="row">
           <div class="col-lg-5">
             <select class="form-control">
-              <option>Type</option>
-              <option>Dog</option>
-              <option>Cat</option>
-              <option>Bird</option>
-              <option>Horse</option>
+              <optgroup label="Type">
+                <option>All types</option>
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Bird</option>
+                <option>Horse</option>
+              </optgroup>
             </select>
           </div>
           <div class="col-lg-7">
             <select class="form-control">
-              <option>Color</option>
-              <option>Negro</option>
-              <option>Cafe</option>
-              <option>Blanco</option>
-              <option>Otro</option>
+              <optgroup label="Color">
+                <option>All colors</option>
+                <option>Black</option>
+                <option>Brown</option>
+                <option>White</option>
+                <option>Other</option>
+              </optgroup>
             </select>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12">
             <select class="form-control">
-              <option>Size</option>
-              <option>Small</option>
-              <option>Medium</option>
-              <option>Large</option>
+              <optgroup label="Size">
+                <option>All sizes</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
             </select>
           </div>
         </div>
@@ -71,11 +76,12 @@
         <div class="pull-left result">Showing: </div>
         <div class="pull-right">
           <select class="form-control">
-            <option>Sort by</option>
-            <option>Recency: Old to New</option>
-            <option>Recency: New to Old</option>
-            <option>Alphabetical order</option>
-            <option>Reverse alphabetical order</option>
+            <optgroup label="Sort by">
+              <option>Recency: Old to New</option>
+              <option>Recency: New to Old</option>
+              <option>Alphabetical order</option>
+              <option>Reverse alphabetical order</option>
+            </optgroup>
           </select>
         </div>
       </div>
