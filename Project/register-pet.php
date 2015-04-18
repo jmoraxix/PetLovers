@@ -3,7 +3,7 @@
 <script src="javascript/findInputs.js"></script>
 <div class="inside-banner">
   <div class="container">
-    <span class="pull-right"><a href="#">Home</a> / Register</span>
+    <span class="pull-right"><a href="#">Home</a> / Register Pet</span>
     <h2>Register Pet</h2>
   </div>
 </div>
