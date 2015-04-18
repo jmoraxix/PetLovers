@@ -1,4 +1,3 @@
-
 <div class="footer">
   <div class="container">
     <div class="row">
@@ -26,36 +25,39 @@
         <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
         <a href="#"><img src="images/instagram.png" alt="instagram"></a>
       </div>
-      <p class="copyright">Copyright 2015. All rights reserved. </p>
-    </div></div>
-    <!-- Modal -->
-    <div id="loginpop" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="row">
-            <div class="col-sm-6 login">
-              <h4>Login</h4>
-              <form class="" role="form">
-                <div class="form-group">
-                  <label class="sr-only" for="inputUsername">Username</label>
-                  <input id="login_username" type="text" class="form-control" id="inputUsername" placeholder="Enter username">
-                </div>
-                <div class="form-group">
-                  <label class="sr-only" for="inputPassword">Password</label>
-                  <input id="login_password" type="password" class="form-control" id="inputPassword" placeholder="Password">
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Remember me
-                  </label>
-                </div>
-                <button id="start_session" type="button" class="btn btn-success">Sign in</button>
-              </form>
-            </div>
+      <div class="col-lg-3 col-sm-3">
+        <p class="copyright">Copyright 2015. All rights reserved. </p>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div id="loginpop" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col-sm-8 login">
+            <h4>Login</h4>
+            <form class="" role="form">
+              <div class="form-group">
+                <label class="sr-only" for="inputUsername">Username</label>
+                <input id="login_username" type="text" class="form-control" placeholder="Enter username" required>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="inputPassword">Password</label>
+                <input id="login_password" type="password" class="form-control" placeholder="Password" required>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Remember me
+                </label>
+              </div>
+              <button id="start_session" type="button" class="btn btn-success">Sign in</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <!-- /.modal -->
-  </body>
+  </div>
+  <!-- /.modal -->
+</body>
 </html>
