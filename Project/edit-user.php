@@ -60,12 +60,14 @@
 	oci_fetch_all($result, $dataArray, null, null, OCI_FETCHSTATEMENT_BY_ROW);
 	oci_fetch_all($emailResult, $emailArray, null, null, OCI_FETCHSTATEMENT_BY_ROW);
 	oci_fetch_all($phoneResult, $phoneArray, null, null, OCI_FETCHSTATEMENT_BY_ROW);
-	var_dump($emailArray);
-	var_dump($phoneArray);
 	
 	$firstName = $dataArray[0]['PERSON_NAME'];
 	$lastName = $dataArray[0]['FIRST_LAST_NAME'];
 	$secondLastName = $dataArray[0]['SECOND_LAST_NAME'];
+	
+	$primaryEmail = $emailArray[0]['EMAIL'];
+	$primaryPhone = $phoneArray[0]['PHONE_NUMBER'];
+	
 	
 
 ?>
@@ -97,8 +99,8 @@
         <input id="user_first_name" type="text" class="form-control" name="form_name" maxlength="20" readonly value="<?php echo $firstName?>">
         <input id="user_first_lastname" type="text" class="form-control" name="form_name" maxlength="16" readonly value="<?php echo $lastName?>">
         <input id="user_second_lastname" type="text" class="form-control" name="form_name" maxlength="16" readonly value="<?php echo $secondLastName?>">
-        <input id="user_email" type="text" class="form-control" name="form_email" maxlength="30" readonly>
-        <input id="user_phone" type="text" class="form-control" name="form_email" maxlength="8" readonly>
+        <input id="user_email" type="text" class="form-control" name="form_email" maxlength="30" readonly value="<?php echo $primaryEmail?>">
+        <input id="user_phone" type="text" class="form-control" name="form_email" maxlength="8" readonly value="<?php echo $primaryPhone?>">
         <legend>Which type of user would you want to be?</legend>
         <input type="checkbox" name="animal" value="" style="height: 20px" checked>
         <label>Adopter</label> <br />

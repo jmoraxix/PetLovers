@@ -71,64 +71,129 @@ CREATE OR REPLACE PACKAGE person_package AS
          (p_name person.person_name%type,
          p_first_ln person.first_last_name%type,
          p_second_ln person.second_last_name%type,
-         p_username person.username%type);
+         p_username person.username%type);  
+       FUNCTION find_person_id(u_name person.username%type)
+       RETURN NUMBER;
+       FUNCTION retrieve_user_details(p_id person.person_id%type)
+       RETURN SYS_REFCURSOR;
 END person_package;
 
-CREATE OR REPLACE PACKAGE BODY person_package AS 
+
+
+CREATE OR REPLACE PACKAGE BODY person_package AS
        PROCEDURE add_person
          (p_name person.person_name%type,
          p_first_ln person.first_last_name%type,
          p_second_ln person.second_last_name%type,
          p_username person.username%type)
-        IS 
-        BEGIN 
+        IS
+        BEGIN
           INSERT INTO person(person_id, person_name,first_last_name,second_last_name,username)
           VALUES (person_id_generator.nextval,p_name, p_first_ln, p_second_ln, p_username);
         END add_person;
-END person_package; 
+        
+        FUNCTION find_person_id(u_name person.username%type)
+        RETURN NUMBER
+        IS 
+          p_id NUMBER(10);
+        BEGIN 
+          SELECT person_id INTO p_id 
+          FROM person 
+          WHERE u_name = username;
+          RETURN p_id;
+        EXCEPTION 
+          WHEN NO_DATA_FOUND THEN 
+            RETURN 0;
+        END;
+          
+       FUNCTION retrieve_user_details(p_id person.person_id%type)
+       RETURN SYS_REFCURSOR
+       IS 
+         c_details SYS_REFCURSOR;
+       BEGIN 
+          OPEN c_details FOR SELECT username, person_name, first_last_name, second_last_name, blacklist
+          FROM person 
+          WHERE p_id = person_id;
+          RETURN c_details;
+       EXCEPTION 
+         WHEN NO_DATA_FOUND THEN 
+           dbms_output.put_line('no data found');
+       END;   
+END person_package;
 
 /*----------------------------------------------------------------------------------------*/
 /*PACKAGE FOR PHONE */
-CREATE OR REPLACE PACKAGE phone_package AS 
+CREATE OR REPLACE PACKAGE phone_package AS
        PROCEDURE add_phone
          (p_number phone.phone_number%type,
           p_username person.username%type);
+       FUNCTION retrieve_user_phones(p_id phone.person_id%type)
+       RETURN SYS_REFCURSOR;
 END phone_package;
 
-CREATE OR REPLACE PACKAGE BODY phone_package AS 
+CREATE OR REPLACE PACKAGE BODY phone_package AS
        PROCEDURE add_phone
-         (p_number phone.phone_number%type, 
+         (p_number phone.phone_number%type,
           p_username person.username%type)
-         IS 
-         BEGIN 
+         IS
+         BEGIN
            INSERT INTO phone(person_id, phone_number)
            VALUES ((SELECT person.person_id
-                   FROM PERSON 
-                   WHERE p_username = person.username), 
+                   FROM PERSON
+                   WHERE p_username = person.username),
                    p_number);
          END add_phone;
+         
+        FUNCTION retrieve_user_phones(p_id phone.person_id%type)
+        RETURN SYS_REFCURSOR
+        IS
+          c_phones SYS_REFCURSOR;
+        BEGIN
+          OPEN c_phones FOR SELECT phone_number
+          FROM phone 
+          WHERE p_id = person_id;
+          RETURN c_phones;
+        EXCEPTION 
+          WHEN NO_DATA_FOUND THEN 
+            RETURN null;
+        END;
 END phone_package;
 
 /*------------------------------------------------------------------------*/
 /*PACKAGE FOR EMAIL*/
-CREATE OR REPLACE PACKAGE email_package AS 
+CREATE OR REPLACE PACKAGE email_package AS
        PROCEDURE add_email
-         (p_email email.email%type, 
+         (p_email email.email%type,
           p_username person.username%type);
+       FUNCTION retrieve_user_emails(p_id email.person_id%type)
+       RETURN SYS_REFCURSOR;
 END email_package;
 
-CREATE OR REPLACE PACKAGE BODY email_package AS 
+CREATE OR REPLACE PACKAGE BODY email_package AS
        PROCEDURE add_email
          (p_email email.email%type,
          p_username person.username%type)
-         IS 
-         BEGIN 
+         IS
+         BEGIN
            INSERT INTO email(person_id, email)
            VALUES ((SELECT person.person_id
-                   FROM PERSON 
+                   FROM PERSON
                    WHERE p_username = person.username),
                    p_email);
          END add_email;
+         
+         FUNCTION retrieve_user_emails(p_id email.person_id%type)
+         RETURN SYS_REFCURSOR
+         IS 
+           c_emails SYS_REFCURSOR;
+         BEGIN
+           OPEN c_emails FOR SELECT email
+           FROM email
+           WHERE p_id = person_id;
+           RETURN c_emails;
+        EXCEPTION 
+          WHEN NO_DATA_FOUND THEN 
+           RETURN null;
+        END;
 END email_package;
-
   
