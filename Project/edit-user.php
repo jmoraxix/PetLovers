@@ -21,7 +21,11 @@
 	$primaryEmail;
 	$primaryPhone;
 	$result;
+	$emailResult;
+	$phoneResult;
 	$dataArray;
+	$emailArray;
+	$phoneArray;
 
 	
 	if(!$db_connection){                                    /* checks if connection with the database works */
@@ -29,21 +33,40 @@
 	}
 	
 	$sqlVariableGetUserDetails = 'BEGIN :result := person_package.retrieve_user_details(:p_id);END;';
-	$sqlVariableGetEmails;
-	$sqlVariableGetPhones;
+	$sqlVariableGetEmails = 'BEGIN :email_result := email_package.retrieve_user_emails(:p_id);END;';
+	$sqlVariableGetPhones = 'BEGIN :phone_result := phone_package.retrieve_user_phones(:p_id);END;';
 	$result = oci_new_cursor($db_connection);
+	$emailResult = oci_new_cursor($db_connection);
+	$phoneResult = oci_new_cursor($db_connection);
 	
 	$dataToReceiveUserDetails = oci_parse($db_connection, $sqlVariableGetUserDetails);
+	$dataToReceiveUserEmails = oci_parse($db_connection, $sqlVariableGetEmails);
+	$dataToReceiveUserPhones = oci_parse($db_connection, $sqlVariableGetPhones);
 	
 	oci_bind_by_name($dataToReceiveUserDetails, ':result', $result, -1,  OCI_B_CURSOR);
 	oci_bind_by_name($dataToReceiveUserDetails, ':p_id', $id);
+	oci_bind_by_name($dataToReceiveUserEmails, ':email_result', $emailResult, -1, OCI_B_CURSOR);
+	oci_bind_by_name($dataToReceiveUserEmails, ':p_id', $id);
+	oci_bind_by_name($dataToReceiveUserPhones, ':phone_result', $phoneResult, -1, OCI_B_CURSOR);
+		oci_bind_by_name($dataToReceiveUserPhones, ':p_id', $id);
 	
 	oci_execute($dataToReceiveUserDetails);
 	oci_execute($result, OCI_DEFAULT);
-	oci_fetch_all($result, $array, null, null, OCI_FETCHSTATEMENT_BY_ROW);
-	$firstName = $array[0]['PERSON_NAME'];
-	$lastName = $array[0]['FIRST_LAST_NAME'];
-	$secondLastName = $array[0]['SECOND_LAST_NAME'];
+	oci_execute($dataToReceiveUserEmails);
+	oci_execute($emailResult, OCI_DEFAULT);
+	oci_execute($dataToReceiveUserPhones);
+	oci_execute($phoneResult, OCI_DEFAULT);
+	
+	oci_fetch_all($result, $dataArray, null, null, OCI_FETCHSTATEMENT_BY_ROW);
+	oci_fetch_all($emailResult, $emailArray, null, null, OCI_FETCHSTATEMENT_BY_ROW);
+	oci_fetch_all($phoneResult, $phoneArray, null, null, OCI_FETCHSTATEMENT_BY_ROW);
+	var_dump($emailArray);
+	var_dump($phoneArray);
+	
+	$firstName = $dataArray[0]['PERSON_NAME'];
+	$lastName = $dataArray[0]['FIRST_LAST_NAME'];
+	$secondLastName = $dataArray[0]['SECOND_LAST_NAME'];
+	
 
 ?>
 <div class="container">
@@ -89,8 +112,21 @@
             <button id="user_email_butt" type="button" class="btn btn-success" data-toggle="modal" data-target="#user_Email">Edit Email</button>
           </div>
         </div>
+		<br>
+		<div class="row">
+          <div class="col-lg-6">
+            <input id="insert_email" type="text" class="form-control" name="form_email" placeholder="New Email Address">
+          </div>
+          <div class="col-lg-6">
+            <input id="insert_phone" type="text" class="form-control" name="form_email" placeholder="New Phone Number">
+          </div>
+		  <div class="col-lg-6">
+            <button id="insert_email_phone" type="button" class="btn btn-success" >Confirm</button>
+          </div>
+        </div>
       </div>
     </div>
+	<br>
     <div class="row register">
       <div class="pull-right">
         <button id="Submit_User" type="button" class="btn btn-success" name="Submit" >Save</button>
