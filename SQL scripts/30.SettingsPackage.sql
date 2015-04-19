@@ -83,7 +83,23 @@ CREATE SEQUENCE vet_id_generator
   MINVALUE 0
   MAXVALUE 1000000000
   NOCACHE
-  NOCYCLE;	 
+  NOCYCLE;	  
+
+  CREATE SEQUENCE Treatment_id_generator 
+  START WITH 0
+  INCREMENT BY 1
+  MINVALUE 0
+  MAXVALUE 1000000000
+  NOCACHE
+  NOCYCLE;  
+
+  CREATE SEQUENCE Space_id_generator 
+  START WITH 0
+  INCREMENT BY 1
+  MINVALUE 0
+  MAXVALUE 1000000000
+  NOCACHE
+  NOCYCLE;   
 /* -----------------------------------------------DECLARACION PACKAGE FOR SETTINGS----------------------------------*/
 
 CREATE OR REPLACE PACKAGE setting_package AS 
@@ -116,7 +132,13 @@ PROCEDURE SET_ENERGY
 	(name in VARCHAR2);
 
 PROCEDURE SET_Sickness 
-	(name in VARCHAR2);
+	(name in VARCHAR2); 
+
+PROCEDURE SET_Treatment 
+  (name in VARCHAR2); 
+
+PROCEDURE SET_Space 
+  (name in VARCHAR2);  
 
 END setting_package;
 
@@ -231,7 +253,26 @@ PROCEDURE SET_Sickness
 	
 	COMMIT; 
 
-END SET_Sickness;
+END SET_Sickness; 
+
+PROCEDURE SET_Treatment 
+  (name in VARCHAR2) IS 
+    BEGIN 
+      INSERT INTO PETTREATMENTS(PET_TREATMENT, PET_TREATMENT_CODE)
+        VALUES(name, Treatment_id_generator.nextval);  
+
+  COMMIT; 
+
+END SET_Treatment;
+  
+PROCEDURE SET_Space 
+  (name in VARCHAR2) IS
+    BEGIN 
+      INSERT INTO PETSPACE(PET_SPACE, PET_SPACE_CODE)
+        VALUES(name, Space_id_generator.nextval); 
+  COMMIT;  
+
+END SET_Space;
 END setting_package  
 
 
