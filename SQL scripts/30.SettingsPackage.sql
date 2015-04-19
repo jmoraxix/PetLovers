@@ -116,7 +116,7 @@ PROCEDURE SET_ENERGY
 	(name in VARCHAR2);
 
 PROCEDURE SET_Sickness 
-	(name in VARCHAR2, desciption in VARCHAR2);
+	(name in VARCHAR2);
 
 END setting_package;
 
@@ -149,7 +149,7 @@ PROCEDURE SET_VET
 
 		BEGIN 
 			INSERT INTO VETERINARY(Vet_Name, Vet_Code, Vet_Phone_Number)
-				VALUES(name, vet_id_generator.nextval, telefone); 
+				VALUES(name, vet_id_generator.nextval, telephone); 
 	COMMIT; 
 
 END SET_VET;
@@ -224,10 +224,10 @@ PROCEDURE SET_ENERGY
 END SET_ENERGY; 
 
 PROCEDURE SET_Sickness 
-	(name in VARCHAR2, desciption in VARCHAR2) IS
+	(name in VARCHAR2) IS
 		BEGIN 
-			INSERT INTO Petsickness(Pet_Sickness_Name, Pet_Sickness_Description, Pet_Sickness_Code) 
-				VALUES(name, desciption, Sickness_id_generator.nextval); 
+			INSERT INTO Petsickness(Pet_Sickness_Name, Pet_Sickness_Code) 
+				VALUES(name,  Sickness_id_generator.nextval); 
 	
 	COMMIT; 
 
