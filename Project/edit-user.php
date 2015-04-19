@@ -89,7 +89,6 @@
           <div class="col-lg-6">
             <input id="user_password" type="password" class="form-control" placeholder="New Password" name="form_phone" maxlength="16" value="">
           </div>
-          
           <div class="col-lg-6">
             <input id="user_re_password" type="password" class="form-control" placeholder="Confirm Password" name="form_phone" maxlength="16" value="">
           </div>
@@ -117,10 +116,10 @@
 		<br>
 		<div class="row">
           <div class="col-lg-6">
-            <input id="insert_email" type="text" class="form-control" name="form_email" placeholder="New Email Address">
+            <input id="insert_email" type="text" class="form-control" name="form_email" placeholder="New Email Address" maxlength="30">
           </div>
           <div class="col-lg-6">
-            <input id="insert_phone" type="text" class="form-control" name="form_email" placeholder="New Phone Number">
+            <input id="insert_phone" type="text" class="form-control" name="form_email" placeholder="New Phone Number" maxlength="8">
           </div>
 		  <div class="col-lg-6">
             <button id="insert_email_phone" type="button" class="btn btn-success" >Confirm</button>
@@ -131,7 +130,7 @@
 	<br>
     <div class="row register">
       <div class="pull-right">
-        <button id="Submit_User" type="button" class="btn btn-success" name="Submit" >Save</button>
+        <button id="Submit_User" type="button" class="btn btn-success" name="Submit" >Save Changes</button>
       </div>
     </div>
   </div>
