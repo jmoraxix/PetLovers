@@ -111,7 +111,7 @@ PROCEDURE SET_CONDITION
 	(name in VARCHAR2);
 
 PROCEDURE SET_VET 
-	(name in VARCHAR2, telephone in VARCHAR2); 
+	(name in VARCHAR2, telephone in VARCHAR2);
 
 PROCEDURE SET_SIZE 
 	(name in VARCHAR2);
