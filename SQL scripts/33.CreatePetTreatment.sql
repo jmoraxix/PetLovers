@@ -6,7 +6,7 @@ CREATE TABLE petTreatments
 
 ALTER TABLE PetTreatments
 
-ADD CONSTRAINT pk_pet_code PRIMARY KEY (pet_treatment_code)
+ADD CONSTRAINT pk_pet_treatment_code PRIMARY KEY (pet_treatment_code)
 USING INDEX
 TABLESPACE PetLovers_Indexes PCTFREE 20
 STORAGE (initial 10k next 10k pctincrease 0);
