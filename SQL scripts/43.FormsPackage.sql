@@ -42,6 +42,18 @@ PROCEDURE INSERT_ITEM
 PROCEDURE INSERT_TEST
 	(title in VARCHAR2, type in NUMBER); 
 
+PROCEDURE REMOVE_ITEM_OPTION 
+  (item_option_id in NUMBER); 
+
+PROCEDURE REMOVE_ITEM
+  (item_id in NUMBER);
+
+PROCEDURE REMOVE_TEST
+  (test_id in NUMBER);
+
+PROCEDURE UPDATE_ITEM
+  (pitem_id in NUMBER, item_body in VARCHAR2);
+
 END forms_package;
 
 /* ------------------------------------------------PACKAGE BODY FOR FORMS ----------------------------*/
@@ -77,5 +89,50 @@ PROCEDURE INSERT_TEST
   COMMIT; 
 
 END INSERT_TEST; 
+
+PROCEDURE REMOVE_ITEM_OPTION 
+  (pitem_option_id in NUMBER) IS
+    
+    BEGIN
+      DELETE FROM ITEM_OPTION
+      WHERE ITEM_OPTION.item_option_code = pitem_option_id;
+
+  COMMIT;
+
+END REMOVE_ITEM_OPTION;  
+
+PROCEDURE REMOVE_ITEM
+  (pitem_id in NUMBER) IS
+    
+    BEGIN
+      DELETE FROM ITEM
+      WHERE ITEM.item_code = pitem_id;
+
+  COMMIT;
+
+END REMOVE_ITEM;
+
+PROCEDURE REMOVE_TEST
+  (ptest_id in NUMBER) IS
+
+    BEGIN
+      DELETE FROM TEST
+      WHERE TEST.test_code = ptest_id;
+
+  COMMIT;
+
+END REMOVE_TEST;
+
+PROCEDURE UPDATE_ITEM
+  (pitem_id IN NUMBER, item_body in VARCHAR2) IS
+
+    BEGIN
+      UPDATE ITEM
+      SET item = item_body;
+      WHERE item_code = pitem_id;
+
+    COMMIT;
+
+  END UPDATE_ITEM;
 
 END forms_package;
