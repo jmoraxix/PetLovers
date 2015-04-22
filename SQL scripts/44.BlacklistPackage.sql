@@ -40,6 +40,15 @@ PROCEDURE INSERT_PERSON_REVIEW
 PROCEDURE INSERT_BLACKLIST
   (name in VARCHAR2);
 
+PROCEDURE REMOVE_PERSON_REVIEW
+  (pperson_review_id in NUMBER);
+
+PROCEDURE REMOVE_BLACKLIST
+  (pblacklist_id in NUMBER);
+
+PROCEDURE UPDATE_PERSON_REVIEW
+  (person_review in NUMBER, person_review_code in NUMBER);
+
 END blacklist_package;
 
 /* ------------------------------------------------PACKAGE BODY FOR FORMS ----------------------------*/
@@ -67,5 +76,38 @@ PROCEDURE INSERT_BLACKLIST --falta agregar el person id
 
 END INSERT_BLACKLIST;
 
+PROCEDURE REMOVE_PERSON_REVIEW
+  (preview_id in NUMBER) IS
+
+    BEGIN
+      DELETE FROM PERSON_REVIEW
+      WHERE PERSON_REVIEW.person_review_code = preview_id;
+
+  COMMIT;
+
+END REMOVE_PERSON_REVIEW;
+
+PROCEDURE REMOVE_BLACKLIST
+  (pblacklist_id in NUMBER) IS
+
+    BEGIN
+      DELETE FROM BLACKLIST
+      WHERE BLACKLIST.blacklist_code = pblacklist_id;
+
+  COMMIT;
+
+END REMOVE_BLACKLIST;
+
+PROCEDURE UPDATE_PERSON_REVIEW
+  (pperson_review in NUMBER, pperson_review_code in NUMBER) IS
+
+    BEGIN
+      UPDATE PERSON_REVIEW
+      SET person_review = pperson_review;
+      WHERE person_review_code = pperson_review_code;
+
+    COMMIT;
+
+  END UPDATE_ITEM;
 
 END blacklist_package;
